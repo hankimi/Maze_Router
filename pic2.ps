@@ -1,0 +1,2678 @@
+%!PS-Adobe-1.0
+%%DocumentFonts: Helvetica
+%%Pages: 1
+%%HiResBoundingBox: 36.00 234.58 576.00 542.42
+%%EndComments
+/censhow   %draw a centered string
+ { moveto               % move to proper spot
+   dup stringwidth pop  % get x length of string
+   -2 div               % Proper left start
+   yoff rmoveto         % Move left that much and down half font height
+   show newpath } def   % show the string
+
+/setfontsize     % set font to desired size and compute centering yoff
+ { /Helvetica findfont
+   exch scalefont
+   setfont         % Font size set ...
+
+   0 0 moveto      % Get vertical centering offset
+   (Xg) true charpath
+   flattenpath pathbbox
+   /ascent exch def pop -1 mul /descent exch def pop
+   newpath
+   descent ascent sub 2 div /yoff exch def } def
+
+% Next two lines for debugging only.
+/str 20 string def
+/pnum {str cvs print (  ) print} def
+/drawline      % draw a line from (x2,y2) to (x1,y1)
+ { moveto lineto stroke } def
+
+/rect          % outline a rectangle 
+ { /y2 exch def /x2 exch def /y1 exch def /x1 exch def
+   x1 y1 moveto
+   x2 y1 lineto
+   x2 y2 lineto
+   x1 y2 lineto
+   closepath } def
+
+/drawrect      % draw outline of a rectanagle
+ { rect stroke } def
+
+/fillrect      % fill in a rectanagle
+ { rect fill } def
+
+/drawarc { arc stroke } def           % draw an arc
+/drawarcn { arcn stroke } def         % draw an arc in the opposite direction
+
+%Fill a counterclockwise or clockwise arc sector, respectively.
+/fillarc { moveto currentpoint 5 2 roll arc closepath fill } def
+/fillarcn { moveto currentpoint 5 2 roll arcn closepath fill } def
+
+/fillpoly { 3 1 roll moveto         % move to first point
+   2 exch 1 exch {pop lineto} for   % line to all other points
+   closepath fill } def
+
+%Color Definitions:
+/white { 1 setgray } def
+/black { 0 setgray } def
+/grey55 { .55 setgray } def
+/grey75 { .75 setgray } def
+/blue { 0 0 1 setrgbcolor } def
+/green { 0 1 0 setrgbcolor } def
+/yellow { 1 1 0 setrgbcolor } def
+/cyan { 0 1 1 setrgbcolor } def
+/red { 1 0 0 setrgbcolor } def
+/darkgreen { 0 0.5 0 setrgbcolor } def
+/magenta { 1 0 1 setrgbcolor } def
+
+%Solid and dashed line definitions:
+/linesolid {[] 0 setdash} def
+/linedashed {[3 3] 0 setdash} def
+
+%%EndProlog
+%%Page: 1 1
+
+black
+linesolid
+1 setlinewidth
+24 setfontsize
+13 setfontsize
+(Press PROCEED to start routing) 306.00 241.58 censhow
+24 setfontsize
+36.00 249.58 576.00 542.42 rect clip newpath
+
+white
+clippath fill
+
+black
+13 setfontsize
+2 setlinewidth
+179.14 522.86 194.99 522.86 drawline
+179.14 522.86 179.14 507.01 drawline
+179.14 507.01 194.99 507.01 drawline
+194.99 507.01 194.99 522.86 drawline
+linedashed
+194.99 521.81 218.78 521.81 drawline
+194.99 520.75 218.78 520.75 drawline
+194.99 519.69 218.78 519.69 drawline
+194.99 518.63 218.78 518.63 drawline
+194.99 517.58 218.78 517.58 drawline
+194.99 516.52 218.78 516.52 drawline
+194.99 515.46 218.78 515.46 drawline
+194.99 514.41 218.78 514.41 drawline
+194.99 513.35 218.78 513.35 drawline
+194.99 512.29 218.78 512.29 drawline
+194.99 511.23 218.78 511.23 drawline
+194.99 510.18 218.78 510.18 drawline
+194.99 509.12 218.78 509.12 drawline
+194.99 508.06 218.78 508.06 drawline
+linesolid
+218.78 522.86 234.64 522.86 drawline
+218.78 522.86 218.78 507.01 drawline
+218.78 507.01 234.64 507.01 drawline
+234.64 507.01 234.64 522.86 drawline
+linedashed
+234.64 521.81 258.43 521.81 drawline
+234.64 520.75 258.43 520.75 drawline
+234.64 519.69 258.43 519.69 drawline
+234.64 518.63 258.43 518.63 drawline
+234.64 517.58 258.43 517.58 drawline
+234.64 516.52 258.43 516.52 drawline
+234.64 515.46 258.43 515.46 drawline
+234.64 514.41 258.43 514.41 drawline
+234.64 513.35 258.43 513.35 drawline
+234.64 512.29 258.43 512.29 drawline
+234.64 511.23 258.43 511.23 drawline
+234.64 510.18 258.43 510.18 drawline
+234.64 509.12 258.43 509.12 drawline
+234.64 508.06 258.43 508.06 drawline
+linesolid
+258.43 522.86 274.28 522.86 drawline
+258.43 522.86 258.43 507.01 drawline
+258.43 507.01 274.28 507.01 drawline
+274.28 507.01 274.28 522.86 drawline
+linedashed
+274.28 521.81 298.07 521.81 drawline
+274.28 520.75 298.07 520.75 drawline
+274.28 519.69 298.07 519.69 drawline
+274.28 518.63 298.07 518.63 drawline
+274.28 517.58 298.07 517.58 drawline
+274.28 516.52 298.07 516.52 drawline
+274.28 515.46 298.07 515.46 drawline
+274.28 514.41 298.07 514.41 drawline
+274.28 513.35 298.07 513.35 drawline
+274.28 512.29 298.07 512.29 drawline
+274.28 511.23 298.07 511.23 drawline
+274.28 510.18 298.07 510.18 drawline
+274.28 509.12 298.07 509.12 drawline
+274.28 508.06 298.07 508.06 drawline
+linesolid
+298.07 522.86 313.93 522.86 drawline
+298.07 522.86 298.07 507.01 drawline
+298.07 507.01 313.93 507.01 drawline
+313.93 507.01 313.93 522.86 drawline
+linedashed
+313.93 521.81 337.72 521.81 drawline
+313.93 520.75 337.72 520.75 drawline
+313.93 519.69 337.72 519.69 drawline
+313.93 518.63 337.72 518.63 drawline
+313.93 517.58 337.72 517.58 drawline
+313.93 516.52 337.72 516.52 drawline
+313.93 515.46 337.72 515.46 drawline
+313.93 514.41 337.72 514.41 drawline
+313.93 513.35 337.72 513.35 drawline
+313.93 512.29 337.72 512.29 drawline
+313.93 511.23 337.72 511.23 drawline
+313.93 510.18 337.72 510.18 drawline
+313.93 509.12 337.72 509.12 drawline
+313.93 508.06 337.72 508.06 drawline
+linesolid
+337.72 522.86 353.57 522.86 drawline
+337.72 522.86 337.72 507.01 drawline
+337.72 507.01 353.57 507.01 drawline
+353.57 507.01 353.57 522.86 drawline
+linedashed
+353.57 521.81 377.36 521.81 drawline
+353.57 520.75 377.36 520.75 drawline
+353.57 519.69 377.36 519.69 drawline
+353.57 518.63 377.36 518.63 drawline
+353.57 517.58 377.36 517.58 drawline
+353.57 516.52 377.36 516.52 drawline
+353.57 515.46 377.36 515.46 drawline
+353.57 514.41 377.36 514.41 drawline
+353.57 513.35 377.36 513.35 drawline
+353.57 512.29 377.36 512.29 drawline
+353.57 511.23 377.36 511.23 drawline
+353.57 510.18 377.36 510.18 drawline
+353.57 509.12 377.36 509.12 drawline
+353.57 508.06 377.36 508.06 drawline
+linesolid
+377.36 522.86 393.22 522.86 drawline
+377.36 522.86 377.36 507.01 drawline
+377.36 507.01 393.22 507.01 drawline
+393.22 507.01 393.22 522.86 drawline
+linedashed
+393.22 521.81 417.01 521.81 drawline
+393.22 520.75 417.01 520.75 drawline
+393.22 519.69 417.01 519.69 drawline
+393.22 518.63 417.01 518.63 drawline
+393.22 517.58 417.01 517.58 drawline
+393.22 516.52 417.01 516.52 drawline
+393.22 515.46 417.01 515.46 drawline
+393.22 514.41 417.01 514.41 drawline
+393.22 513.35 417.01 513.35 drawline
+393.22 512.29 417.01 512.29 drawline
+393.22 511.23 417.01 511.23 drawline
+393.22 510.18 417.01 510.18 drawline
+393.22 509.12 417.01 509.12 drawline
+393.22 508.06 417.01 508.06 drawline
+linesolid
+417.01 522.86 432.86 522.86 drawline
+417.01 522.86 417.01 507.01 drawline
+417.01 507.01 432.86 507.01 drawline
+432.86 507.01 432.86 522.86 drawline
+linedashed
+180.19 483.22 180.19 507.01 drawline
+181.25 483.22 181.25 507.01 drawline
+182.31 483.22 182.31 507.01 drawline
+183.37 483.22 183.37 507.01 drawline
+184.42 483.22 184.42 507.01 drawline
+185.48 483.22 185.48 507.01 drawline
+186.54 483.22 186.54 507.01 drawline
+187.59 483.22 187.59 507.01 drawline
+188.65 483.22 188.65 507.01 drawline
+189.71 483.22 189.71 507.01 drawline
+190.77 483.22 190.77 507.01 drawline
+191.82 483.22 191.82 507.01 drawline
+192.88 483.22 192.88 507.01 drawline
+193.94 483.22 193.94 507.01 drawline
+linesolid
+198.96 503.04 214.82 503.04 drawline
+198.96 503.04 198.96 487.18 drawline
+198.96 487.18 214.82 487.18 drawline
+214.82 487.18 214.82 503.04 drawline
+yellow
+214.82 487.18 198.96 503.04 fillrect
+23 setfontsize
+black
+(0,5) 206.89 495.11 censhow
+linedashed
+darkgreen
+202.13 503.04 202.13 521.81 drawline
+15 setfontsize
+black
+(1) 202.13 501.06 censhow
+darkgreen
+205.30 503.04 205.30 521.81 drawline
+15 setfontsize
+black
+(2) 205.30 501.06 censhow
+darkgreen
+208.47 503.04 208.47 521.81 drawline
+15 setfontsize
+black
+(3) 208.47 501.06 censhow
+darkgreen
+211.65 503.04 211.65 521.81 drawline
+15 setfontsize
+black
+(4) 211.65 501.06 censhow
+219.84 483.22 219.84 507.01 drawline
+220.90 483.22 220.90 507.01 drawline
+221.95 483.22 221.95 507.01 drawline
+223.01 483.22 223.01 507.01 drawline
+224.07 483.22 224.07 507.01 drawline
+225.12 483.22 225.12 507.01 drawline
+226.18 483.22 226.18 507.01 drawline
+227.24 483.22 227.24 507.01 drawline
+228.30 483.22 228.30 507.01 drawline
+229.35 483.22 229.35 507.01 drawline
+230.41 483.22 230.41 507.01 drawline
+231.47 483.22 231.47 507.01 drawline
+232.53 483.22 232.53 507.01 drawline
+233.58 483.22 233.58 507.01 drawline
+linesolid
+238.60 503.04 254.46 503.04 drawline
+238.60 503.04 238.60 487.18 drawline
+238.60 487.18 254.46 487.18 drawline
+254.46 487.18 254.46 503.04 drawline
+yellow
+254.46 487.18 238.60 503.04 fillrect
+23 setfontsize
+black
+(1,5) 246.53 495.11 censhow
+linedashed
+darkgreen
+241.78 503.04 241.78 521.81 drawline
+15 setfontsize
+black
+(1) 241.78 501.06 censhow
+darkgreen
+244.95 503.04 244.95 521.81 drawline
+15 setfontsize
+black
+(2) 244.95 501.06 censhow
+darkgreen
+248.12 503.04 248.12 521.81 drawline
+15 setfontsize
+black
+(3) 248.12 501.06 censhow
+darkgreen
+251.29 503.04 251.29 521.81 drawline
+15 setfontsize
+black
+(4) 251.29 501.06 censhow
+259.48 483.22 259.48 507.01 drawline
+260.54 483.22 260.54 507.01 drawline
+261.60 483.22 261.60 507.01 drawline
+262.66 483.22 262.66 507.01 drawline
+263.71 483.22 263.71 507.01 drawline
+264.77 483.22 264.77 507.01 drawline
+265.83 483.22 265.83 507.01 drawline
+266.88 483.22 266.88 507.01 drawline
+267.94 483.22 267.94 507.01 drawline
+269.00 483.22 269.00 507.01 drawline
+270.06 483.22 270.06 507.01 drawline
+271.11 483.22 271.11 507.01 drawline
+272.17 483.22 272.17 507.01 drawline
+273.23 483.22 273.23 507.01 drawline
+linesolid
+278.25 503.04 294.11 503.04 drawline
+278.25 503.04 278.25 487.18 drawline
+278.25 487.18 294.11 487.18 drawline
+294.11 487.18 294.11 503.04 drawline
+yellow
+294.11 487.18 278.25 503.04 fillrect
+23 setfontsize
+black
+(2,5) 286.18 495.11 censhow
+linedashed
+darkgreen
+281.42 503.04 281.42 521.81 drawline
+15 setfontsize
+black
+(1) 281.42 501.06 censhow
+darkgreen
+284.59 503.04 284.59 521.81 drawline
+15 setfontsize
+black
+(2) 284.59 501.06 censhow
+darkgreen
+287.76 503.04 287.76 521.81 drawline
+15 setfontsize
+black
+(3) 287.76 501.06 censhow
+darkgreen
+290.94 503.04 290.94 521.81 drawline
+15 setfontsize
+black
+(4) 290.94 501.06 censhow
+299.13 483.22 299.13 507.01 drawline
+300.19 483.22 300.19 507.01 drawline
+301.24 483.22 301.24 507.01 drawline
+302.30 483.22 302.30 507.01 drawline
+303.36 483.22 303.36 507.01 drawline
+304.41 483.22 304.41 507.01 drawline
+305.47 483.22 305.47 507.01 drawline
+306.53 483.22 306.53 507.01 drawline
+307.59 483.22 307.59 507.01 drawline
+308.64 483.22 308.64 507.01 drawline
+309.70 483.22 309.70 507.01 drawline
+310.76 483.22 310.76 507.01 drawline
+311.81 483.22 311.81 507.01 drawline
+312.87 483.22 312.87 507.01 drawline
+linesolid
+317.89 503.04 333.75 503.04 drawline
+317.89 503.04 317.89 487.18 drawline
+317.89 487.18 333.75 487.18 drawline
+333.75 487.18 333.75 503.04 drawline
+yellow
+333.75 487.18 317.89 503.04 fillrect
+23 setfontsize
+black
+(3,5) 325.82 495.11 censhow
+linedashed
+darkgreen
+321.06 503.04 321.06 521.81 drawline
+15 setfontsize
+black
+(1) 321.06 501.06 censhow
+darkgreen
+324.24 503.04 324.24 521.81 drawline
+15 setfontsize
+black
+(2) 324.24 501.06 censhow
+darkgreen
+327.41 503.04 327.41 521.81 drawline
+15 setfontsize
+black
+(3) 327.41 501.06 censhow
+darkgreen
+330.58 503.04 330.58 521.81 drawline
+15 setfontsize
+black
+(4) 330.58 501.06 censhow
+338.77 483.22 338.77 507.01 drawline
+339.83 483.22 339.83 507.01 drawline
+340.89 483.22 340.89 507.01 drawline
+341.94 483.22 341.94 507.01 drawline
+343.00 483.22 343.00 507.01 drawline
+344.06 483.22 344.06 507.01 drawline
+345.12 483.22 345.12 507.01 drawline
+346.17 483.22 346.17 507.01 drawline
+347.23 483.22 347.23 507.01 drawline
+348.29 483.22 348.29 507.01 drawline
+349.34 483.22 349.34 507.01 drawline
+350.40 483.22 350.40 507.01 drawline
+351.46 483.22 351.46 507.01 drawline
+352.52 483.22 352.52 507.01 drawline
+linesolid
+357.54 503.04 373.40 503.04 drawline
+357.54 503.04 357.54 487.18 drawline
+357.54 487.18 373.40 487.18 drawline
+373.40 487.18 373.40 503.04 drawline
+yellow
+373.40 487.18 357.54 503.04 fillrect
+23 setfontsize
+black
+(4,5) 365.47 495.11 censhow
+linedashed
+darkgreen
+360.71 503.04 360.71 521.81 drawline
+15 setfontsize
+black
+(1) 360.71 501.06 censhow
+darkgreen
+363.88 503.04 363.88 521.81 drawline
+15 setfontsize
+black
+(2) 363.88 501.06 censhow
+darkgreen
+367.05 503.04 367.05 521.81 drawline
+15 setfontsize
+black
+(3) 367.05 501.06 censhow
+darkgreen
+370.22 503.04 370.22 521.81 drawline
+15 setfontsize
+black
+(4) 370.22 501.06 censhow
+378.42 483.22 378.42 507.01 drawline
+379.47 483.22 379.47 507.01 drawline
+380.53 483.22 380.53 507.01 drawline
+381.59 483.22 381.59 507.01 drawline
+382.65 483.22 382.65 507.01 drawline
+383.70 483.22 383.70 507.01 drawline
+384.76 483.22 384.76 507.01 drawline
+385.82 483.22 385.82 507.01 drawline
+386.88 483.22 386.88 507.01 drawline
+387.93 483.22 387.93 507.01 drawline
+388.99 483.22 388.99 507.01 drawline
+390.05 483.22 390.05 507.01 drawline
+391.10 483.22 391.10 507.01 drawline
+392.16 483.22 392.16 507.01 drawline
+linesolid
+397.18 503.04 413.04 503.04 drawline
+397.18 503.04 397.18 487.18 drawline
+397.18 487.18 413.04 487.18 drawline
+413.04 487.18 413.04 503.04 drawline
+yellow
+413.04 487.18 397.18 503.04 fillrect
+23 setfontsize
+black
+(5,5) 405.11 495.11 censhow
+linedashed
+darkgreen
+400.35 503.04 400.35 521.81 drawline
+15 setfontsize
+black
+(1) 400.35 501.06 censhow
+darkgreen
+403.53 503.04 403.53 521.81 drawline
+15 setfontsize
+black
+(2) 403.53 501.06 censhow
+darkgreen
+406.70 503.04 406.70 521.81 drawline
+15 setfontsize
+black
+(3) 406.70 501.06 censhow
+darkgreen
+409.87 503.04 409.87 521.81 drawline
+15 setfontsize
+black
+(4) 409.87 501.06 censhow
+418.06 483.22 418.06 507.01 drawline
+419.12 483.22 419.12 507.01 drawline
+420.18 483.22 420.18 507.01 drawline
+421.23 483.22 421.23 507.01 drawline
+422.29 483.22 422.29 507.01 drawline
+423.35 483.22 423.35 507.01 drawline
+424.41 483.22 424.41 507.01 drawline
+425.46 483.22 425.46 507.01 drawline
+426.52 483.22 426.52 507.01 drawline
+427.58 483.22 427.58 507.01 drawline
+428.63 483.22 428.63 507.01 drawline
+429.69 483.22 429.69 507.01 drawline
+430.75 483.22 430.75 507.01 drawline
+431.81 483.22 431.81 507.01 drawline
+linesolid
+179.14 483.22 194.99 483.22 drawline
+179.14 483.22 179.14 467.36 drawline
+179.14 467.36 194.99 467.36 drawline
+194.99 467.36 194.99 483.22 drawline
+linedashed
+194.99 482.16 218.78 482.16 drawline
+194.99 481.10 218.78 481.10 drawline
+194.99 480.05 218.78 480.05 drawline
+194.99 478.99 218.78 478.99 drawline
+194.99 477.93 218.78 477.93 drawline
+194.99 476.88 218.78 476.88 drawline
+194.99 475.82 218.78 475.82 drawline
+194.99 474.76 218.78 474.76 drawline
+194.99 473.70 218.78 473.70 drawline
+194.99 472.65 218.78 472.65 drawline
+194.99 471.59 218.78 471.59 drawline
+194.99 470.53 218.78 470.53 drawline
+194.99 469.47 218.78 469.47 drawline
+194.99 468.42 218.78 468.42 drawline
+linesolid
+218.78 483.22 234.64 483.22 drawline
+218.78 483.22 218.78 467.36 drawline
+218.78 467.36 234.64 467.36 drawline
+234.64 467.36 234.64 483.22 drawline
+linedashed
+234.64 482.16 258.43 482.16 drawline
+234.64 481.10 258.43 481.10 drawline
+234.64 480.05 258.43 480.05 drawline
+234.64 478.99 258.43 478.99 drawline
+234.64 477.93 258.43 477.93 drawline
+234.64 476.88 258.43 476.88 drawline
+234.64 475.82 258.43 475.82 drawline
+234.64 474.76 258.43 474.76 drawline
+234.64 473.70 258.43 473.70 drawline
+234.64 472.65 258.43 472.65 drawline
+234.64 471.59 258.43 471.59 drawline
+234.64 470.53 258.43 470.53 drawline
+234.64 469.47 258.43 469.47 drawline
+234.64 468.42 258.43 468.42 drawline
+linesolid
+258.43 483.22 274.28 483.22 drawline
+258.43 483.22 258.43 467.36 drawline
+258.43 467.36 274.28 467.36 drawline
+274.28 467.36 274.28 483.22 drawline
+linedashed
+274.28 482.16 298.07 482.16 drawline
+274.28 481.10 298.07 481.10 drawline
+274.28 480.05 298.07 480.05 drawline
+274.28 478.99 298.07 478.99 drawline
+274.28 477.93 298.07 477.93 drawline
+274.28 476.88 298.07 476.88 drawline
+274.28 475.82 298.07 475.82 drawline
+274.28 474.76 298.07 474.76 drawline
+274.28 473.70 298.07 473.70 drawline
+274.28 472.65 298.07 472.65 drawline
+274.28 471.59 298.07 471.59 drawline
+274.28 470.53 298.07 470.53 drawline
+274.28 469.47 298.07 469.47 drawline
+274.28 468.42 298.07 468.42 drawline
+linesolid
+298.07 483.22 313.93 483.22 drawline
+298.07 483.22 298.07 467.36 drawline
+298.07 467.36 313.93 467.36 drawline
+313.93 467.36 313.93 483.22 drawline
+linedashed
+313.93 482.16 337.72 482.16 drawline
+313.93 481.10 337.72 481.10 drawline
+313.93 480.05 337.72 480.05 drawline
+313.93 478.99 337.72 478.99 drawline
+313.93 477.93 337.72 477.93 drawline
+313.93 476.88 337.72 476.88 drawline
+313.93 475.82 337.72 475.82 drawline
+313.93 474.76 337.72 474.76 drawline
+313.93 473.70 337.72 473.70 drawline
+313.93 472.65 337.72 472.65 drawline
+313.93 471.59 337.72 471.59 drawline
+313.93 470.53 337.72 470.53 drawline
+313.93 469.47 337.72 469.47 drawline
+313.93 468.42 337.72 468.42 drawline
+linesolid
+337.72 483.22 353.57 483.22 drawline
+337.72 483.22 337.72 467.36 drawline
+337.72 467.36 353.57 467.36 drawline
+353.57 467.36 353.57 483.22 drawline
+linedashed
+353.57 482.16 377.36 482.16 drawline
+353.57 481.10 377.36 481.10 drawline
+353.57 480.05 377.36 480.05 drawline
+353.57 478.99 377.36 478.99 drawline
+353.57 477.93 377.36 477.93 drawline
+353.57 476.88 377.36 476.88 drawline
+353.57 475.82 377.36 475.82 drawline
+353.57 474.76 377.36 474.76 drawline
+353.57 473.70 377.36 473.70 drawline
+353.57 472.65 377.36 472.65 drawline
+353.57 471.59 377.36 471.59 drawline
+353.57 470.53 377.36 470.53 drawline
+353.57 469.47 377.36 469.47 drawline
+353.57 468.42 377.36 468.42 drawline
+linesolid
+377.36 483.22 393.22 483.22 drawline
+377.36 483.22 377.36 467.36 drawline
+377.36 467.36 393.22 467.36 drawline
+393.22 467.36 393.22 483.22 drawline
+linedashed
+393.22 482.16 417.01 482.16 drawline
+393.22 481.10 417.01 481.10 drawline
+393.22 480.05 417.01 480.05 drawline
+393.22 478.99 417.01 478.99 drawline
+393.22 477.93 417.01 477.93 drawline
+393.22 476.88 417.01 476.88 drawline
+393.22 475.82 417.01 475.82 drawline
+393.22 474.76 417.01 474.76 drawline
+393.22 473.70 417.01 473.70 drawline
+393.22 472.65 417.01 472.65 drawline
+393.22 471.59 417.01 471.59 drawline
+393.22 470.53 417.01 470.53 drawline
+393.22 469.47 417.01 469.47 drawline
+393.22 468.42 417.01 468.42 drawline
+linesolid
+417.01 483.22 432.86 483.22 drawline
+417.01 483.22 417.01 467.36 drawline
+417.01 467.36 432.86 467.36 drawline
+432.86 467.36 432.86 483.22 drawline
+linedashed
+180.19 443.57 180.19 467.36 drawline
+181.25 443.57 181.25 467.36 drawline
+182.31 443.57 182.31 467.36 drawline
+183.37 443.57 183.37 467.36 drawline
+184.42 443.57 184.42 467.36 drawline
+185.48 443.57 185.48 467.36 drawline
+186.54 443.57 186.54 467.36 drawline
+187.59 443.57 187.59 467.36 drawline
+188.65 443.57 188.65 467.36 drawline
+189.71 443.57 189.71 467.36 drawline
+190.77 443.57 190.77 467.36 drawline
+191.82 443.57 191.82 467.36 drawline
+192.88 443.57 192.88 467.36 drawline
+193.94 443.57 193.94 467.36 drawline
+linesolid
+198.96 463.40 214.82 463.40 drawline
+198.96 463.40 198.96 447.54 drawline
+198.96 447.54 214.82 447.54 drawline
+214.82 447.54 214.82 463.40 drawline
+yellow
+214.82 447.54 198.96 463.40 fillrect
+23 setfontsize
+black
+(0,4) 206.89 455.47 censhow
+linedashed
+darkgreen
+202.13 463.40 202.13 482.16 drawline
+15 setfontsize
+black
+(1) 202.13 461.41 censhow
+darkgreen
+205.30 463.40 205.30 482.16 drawline
+15 setfontsize
+black
+(2) 205.30 461.41 censhow
+darkgreen
+208.47 463.40 208.47 482.16 drawline
+15 setfontsize
+black
+(3) 208.47 461.41 censhow
+darkgreen
+211.65 463.40 211.65 482.16 drawline
+15 setfontsize
+black
+(4) 211.65 461.41 censhow
+219.84 443.57 219.84 467.36 drawline
+220.90 443.57 220.90 467.36 drawline
+221.95 443.57 221.95 467.36 drawline
+223.01 443.57 223.01 467.36 drawline
+224.07 443.57 224.07 467.36 drawline
+225.12 443.57 225.12 467.36 drawline
+226.18 443.57 226.18 467.36 drawline
+227.24 443.57 227.24 467.36 drawline
+228.30 443.57 228.30 467.36 drawline
+229.35 443.57 229.35 467.36 drawline
+230.41 443.57 230.41 467.36 drawline
+231.47 443.57 231.47 467.36 drawline
+232.53 443.57 232.53 467.36 drawline
+233.58 443.57 233.58 467.36 drawline
+linesolid
+238.60 463.40 254.46 463.40 drawline
+238.60 463.40 238.60 447.54 drawline
+238.60 447.54 254.46 447.54 drawline
+254.46 447.54 254.46 463.40 drawline
+yellow
+254.46 447.54 238.60 463.40 fillrect
+23 setfontsize
+black
+(1,4) 246.53 455.47 censhow
+linedashed
+darkgreen
+241.78 463.40 241.78 482.16 drawline
+15 setfontsize
+black
+(1) 241.78 461.41 censhow
+darkgreen
+244.95 463.40 244.95 482.16 drawline
+15 setfontsize
+black
+(2) 244.95 461.41 censhow
+darkgreen
+248.12 463.40 248.12 482.16 drawline
+15 setfontsize
+black
+(3) 248.12 461.41 censhow
+darkgreen
+251.29 463.40 251.29 482.16 drawline
+15 setfontsize
+black
+(4) 251.29 461.41 censhow
+259.48 443.57 259.48 467.36 drawline
+260.54 443.57 260.54 467.36 drawline
+261.60 443.57 261.60 467.36 drawline
+262.66 443.57 262.66 467.36 drawline
+263.71 443.57 263.71 467.36 drawline
+264.77 443.57 264.77 467.36 drawline
+265.83 443.57 265.83 467.36 drawline
+266.88 443.57 266.88 467.36 drawline
+267.94 443.57 267.94 467.36 drawline
+269.00 443.57 269.00 467.36 drawline
+270.06 443.57 270.06 467.36 drawline
+271.11 443.57 271.11 467.36 drawline
+272.17 443.57 272.17 467.36 drawline
+273.23 443.57 273.23 467.36 drawline
+linesolid
+278.25 463.40 294.11 463.40 drawline
+278.25 463.40 278.25 447.54 drawline
+278.25 447.54 294.11 447.54 drawline
+294.11 447.54 294.11 463.40 drawline
+yellow
+294.11 447.54 278.25 463.40 fillrect
+23 setfontsize
+black
+(2,4) 286.18 455.47 censhow
+linedashed
+darkgreen
+281.42 463.40 281.42 482.16 drawline
+15 setfontsize
+black
+(1) 281.42 461.41 censhow
+darkgreen
+284.59 463.40 284.59 482.16 drawline
+15 setfontsize
+black
+(2) 284.59 461.41 censhow
+darkgreen
+287.76 463.40 287.76 482.16 drawline
+15 setfontsize
+black
+(3) 287.76 461.41 censhow
+darkgreen
+290.94 463.40 290.94 482.16 drawline
+15 setfontsize
+black
+(4) 290.94 461.41 censhow
+299.13 443.57 299.13 467.36 drawline
+300.19 443.57 300.19 467.36 drawline
+301.24 443.57 301.24 467.36 drawline
+302.30 443.57 302.30 467.36 drawline
+303.36 443.57 303.36 467.36 drawline
+304.41 443.57 304.41 467.36 drawline
+305.47 443.57 305.47 467.36 drawline
+306.53 443.57 306.53 467.36 drawline
+307.59 443.57 307.59 467.36 drawline
+308.64 443.57 308.64 467.36 drawline
+309.70 443.57 309.70 467.36 drawline
+310.76 443.57 310.76 467.36 drawline
+311.81 443.57 311.81 467.36 drawline
+312.87 443.57 312.87 467.36 drawline
+linesolid
+317.89 463.40 333.75 463.40 drawline
+317.89 463.40 317.89 447.54 drawline
+317.89 447.54 333.75 447.54 drawline
+333.75 447.54 333.75 463.40 drawline
+yellow
+333.75 447.54 317.89 463.40 fillrect
+23 setfontsize
+black
+(3,4) 325.82 455.47 censhow
+linedashed
+darkgreen
+321.06 463.40 321.06 482.16 drawline
+15 setfontsize
+black
+(1) 321.06 461.41 censhow
+darkgreen
+324.24 463.40 324.24 482.16 drawline
+15 setfontsize
+black
+(2) 324.24 461.41 censhow
+darkgreen
+327.41 463.40 327.41 482.16 drawline
+15 setfontsize
+black
+(3) 327.41 461.41 censhow
+darkgreen
+330.58 463.40 330.58 482.16 drawline
+15 setfontsize
+black
+(4) 330.58 461.41 censhow
+338.77 443.57 338.77 467.36 drawline
+339.83 443.57 339.83 467.36 drawline
+340.89 443.57 340.89 467.36 drawline
+341.94 443.57 341.94 467.36 drawline
+343.00 443.57 343.00 467.36 drawline
+344.06 443.57 344.06 467.36 drawline
+345.12 443.57 345.12 467.36 drawline
+346.17 443.57 346.17 467.36 drawline
+347.23 443.57 347.23 467.36 drawline
+348.29 443.57 348.29 467.36 drawline
+349.34 443.57 349.34 467.36 drawline
+350.40 443.57 350.40 467.36 drawline
+351.46 443.57 351.46 467.36 drawline
+352.52 443.57 352.52 467.36 drawline
+linesolid
+357.54 463.40 373.40 463.40 drawline
+357.54 463.40 357.54 447.54 drawline
+357.54 447.54 373.40 447.54 drawline
+373.40 447.54 373.40 463.40 drawline
+yellow
+373.40 447.54 357.54 463.40 fillrect
+23 setfontsize
+black
+(4,4) 365.47 455.47 censhow
+linedashed
+darkgreen
+360.71 463.40 360.71 482.16 drawline
+15 setfontsize
+black
+(1) 360.71 461.41 censhow
+darkgreen
+363.88 463.40 363.88 482.16 drawline
+15 setfontsize
+black
+(2) 363.88 461.41 censhow
+darkgreen
+367.05 463.40 367.05 482.16 drawline
+15 setfontsize
+black
+(3) 367.05 461.41 censhow
+darkgreen
+370.22 463.40 370.22 482.16 drawline
+15 setfontsize
+black
+(4) 370.22 461.41 censhow
+378.42 443.57 378.42 467.36 drawline
+379.47 443.57 379.47 467.36 drawline
+380.53 443.57 380.53 467.36 drawline
+381.59 443.57 381.59 467.36 drawline
+382.65 443.57 382.65 467.36 drawline
+383.70 443.57 383.70 467.36 drawline
+384.76 443.57 384.76 467.36 drawline
+385.82 443.57 385.82 467.36 drawline
+386.88 443.57 386.88 467.36 drawline
+387.93 443.57 387.93 467.36 drawline
+388.99 443.57 388.99 467.36 drawline
+390.05 443.57 390.05 467.36 drawline
+391.10 443.57 391.10 467.36 drawline
+392.16 443.57 392.16 467.36 drawline
+linesolid
+397.18 463.40 413.04 463.40 drawline
+397.18 463.40 397.18 447.54 drawline
+397.18 447.54 413.04 447.54 drawline
+413.04 447.54 413.04 463.40 drawline
+yellow
+413.04 447.54 397.18 463.40 fillrect
+23 setfontsize
+black
+(5,4) 405.11 455.47 censhow
+linedashed
+darkgreen
+400.35 463.40 400.35 482.16 drawline
+15 setfontsize
+black
+(1) 400.35 461.41 censhow
+darkgreen
+403.53 463.40 403.53 482.16 drawline
+15 setfontsize
+black
+(2) 403.53 461.41 censhow
+darkgreen
+406.70 463.40 406.70 482.16 drawline
+15 setfontsize
+black
+(3) 406.70 461.41 censhow
+darkgreen
+409.87 463.40 409.87 482.16 drawline
+15 setfontsize
+black
+(4) 409.87 461.41 censhow
+418.06 443.57 418.06 467.36 drawline
+419.12 443.57 419.12 467.36 drawline
+420.18 443.57 420.18 467.36 drawline
+421.23 443.57 421.23 467.36 drawline
+422.29 443.57 422.29 467.36 drawline
+423.35 443.57 423.35 467.36 drawline
+424.41 443.57 424.41 467.36 drawline
+425.46 443.57 425.46 467.36 drawline
+426.52 443.57 426.52 467.36 drawline
+427.58 443.57 427.58 467.36 drawline
+428.63 443.57 428.63 467.36 drawline
+429.69 443.57 429.69 467.36 drawline
+430.75 443.57 430.75 467.36 drawline
+431.81 443.57 431.81 467.36 drawline
+linesolid
+179.14 443.57 194.99 443.57 drawline
+179.14 443.57 179.14 427.72 drawline
+179.14 427.72 194.99 427.72 drawline
+194.99 427.72 194.99 443.57 drawline
+linedashed
+194.99 442.52 218.78 442.52 drawline
+194.99 441.46 218.78 441.46 drawline
+194.99 440.40 218.78 440.40 drawline
+194.99 439.34 218.78 439.34 drawline
+194.99 438.29 218.78 438.29 drawline
+194.99 437.23 218.78 437.23 drawline
+194.99 436.17 218.78 436.17 drawline
+194.99 435.12 218.78 435.12 drawline
+194.99 434.06 218.78 434.06 drawline
+194.99 433.00 218.78 433.00 drawline
+194.99 431.94 218.78 431.94 drawline
+194.99 430.89 218.78 430.89 drawline
+194.99 429.83 218.78 429.83 drawline
+194.99 428.77 218.78 428.77 drawline
+linesolid
+218.78 443.57 234.64 443.57 drawline
+218.78 443.57 218.78 427.72 drawline
+218.78 427.72 234.64 427.72 drawline
+234.64 427.72 234.64 443.57 drawline
+linedashed
+234.64 442.52 258.43 442.52 drawline
+234.64 441.46 258.43 441.46 drawline
+234.64 440.40 258.43 440.40 drawline
+234.64 439.34 258.43 439.34 drawline
+234.64 438.29 258.43 438.29 drawline
+234.64 437.23 258.43 437.23 drawline
+234.64 436.17 258.43 436.17 drawline
+234.64 435.12 258.43 435.12 drawline
+234.64 434.06 258.43 434.06 drawline
+234.64 433.00 258.43 433.00 drawline
+234.64 431.94 258.43 431.94 drawline
+234.64 430.89 258.43 430.89 drawline
+234.64 429.83 258.43 429.83 drawline
+234.64 428.77 258.43 428.77 drawline
+linesolid
+258.43 443.57 274.28 443.57 drawline
+258.43 443.57 258.43 427.72 drawline
+258.43 427.72 274.28 427.72 drawline
+274.28 427.72 274.28 443.57 drawline
+linedashed
+274.28 442.52 298.07 442.52 drawline
+274.28 441.46 298.07 441.46 drawline
+274.28 440.40 298.07 440.40 drawline
+274.28 439.34 298.07 439.34 drawline
+274.28 438.29 298.07 438.29 drawline
+274.28 437.23 298.07 437.23 drawline
+274.28 436.17 298.07 436.17 drawline
+274.28 435.12 298.07 435.12 drawline
+274.28 434.06 298.07 434.06 drawline
+274.28 433.00 298.07 433.00 drawline
+274.28 431.94 298.07 431.94 drawline
+274.28 430.89 298.07 430.89 drawline
+274.28 429.83 298.07 429.83 drawline
+274.28 428.77 298.07 428.77 drawline
+linesolid
+298.07 443.57 313.93 443.57 drawline
+298.07 443.57 298.07 427.72 drawline
+298.07 427.72 313.93 427.72 drawline
+313.93 427.72 313.93 443.57 drawline
+linedashed
+313.93 442.52 337.72 442.52 drawline
+313.93 441.46 337.72 441.46 drawline
+313.93 440.40 337.72 440.40 drawline
+313.93 439.34 337.72 439.34 drawline
+313.93 438.29 337.72 438.29 drawline
+313.93 437.23 337.72 437.23 drawline
+313.93 436.17 337.72 436.17 drawline
+313.93 435.12 337.72 435.12 drawline
+313.93 434.06 337.72 434.06 drawline
+313.93 433.00 337.72 433.00 drawline
+313.93 431.94 337.72 431.94 drawline
+313.93 430.89 337.72 430.89 drawline
+313.93 429.83 337.72 429.83 drawline
+313.93 428.77 337.72 428.77 drawline
+linesolid
+337.72 443.57 353.57 443.57 drawline
+337.72 443.57 337.72 427.72 drawline
+337.72 427.72 353.57 427.72 drawline
+353.57 427.72 353.57 443.57 drawline
+linedashed
+353.57 442.52 377.36 442.52 drawline
+353.57 441.46 377.36 441.46 drawline
+353.57 440.40 377.36 440.40 drawline
+353.57 439.34 377.36 439.34 drawline
+353.57 438.29 377.36 438.29 drawline
+353.57 437.23 377.36 437.23 drawline
+353.57 436.17 377.36 436.17 drawline
+353.57 435.12 377.36 435.12 drawline
+353.57 434.06 377.36 434.06 drawline
+353.57 433.00 377.36 433.00 drawline
+353.57 431.94 377.36 431.94 drawline
+353.57 430.89 377.36 430.89 drawline
+353.57 429.83 377.36 429.83 drawline
+353.57 428.77 377.36 428.77 drawline
+linesolid
+377.36 443.57 393.22 443.57 drawline
+377.36 443.57 377.36 427.72 drawline
+377.36 427.72 393.22 427.72 drawline
+393.22 427.72 393.22 443.57 drawline
+linedashed
+393.22 442.52 417.01 442.52 drawline
+393.22 441.46 417.01 441.46 drawline
+393.22 440.40 417.01 440.40 drawline
+393.22 439.34 417.01 439.34 drawline
+393.22 438.29 417.01 438.29 drawline
+393.22 437.23 417.01 437.23 drawline
+393.22 436.17 417.01 436.17 drawline
+393.22 435.12 417.01 435.12 drawline
+393.22 434.06 417.01 434.06 drawline
+393.22 433.00 417.01 433.00 drawline
+393.22 431.94 417.01 431.94 drawline
+393.22 430.89 417.01 430.89 drawline
+393.22 429.83 417.01 429.83 drawline
+393.22 428.77 417.01 428.77 drawline
+linesolid
+417.01 443.57 432.86 443.57 drawline
+417.01 443.57 417.01 427.72 drawline
+417.01 427.72 432.86 427.72 drawline
+432.86 427.72 432.86 443.57 drawline
+linedashed
+180.19 403.93 180.19 427.72 drawline
+181.25 403.93 181.25 427.72 drawline
+182.31 403.93 182.31 427.72 drawline
+183.37 403.93 183.37 427.72 drawline
+184.42 403.93 184.42 427.72 drawline
+185.48 403.93 185.48 427.72 drawline
+186.54 403.93 186.54 427.72 drawline
+187.59 403.93 187.59 427.72 drawline
+188.65 403.93 188.65 427.72 drawline
+189.71 403.93 189.71 427.72 drawline
+190.77 403.93 190.77 427.72 drawline
+191.82 403.93 191.82 427.72 drawline
+192.88 403.93 192.88 427.72 drawline
+193.94 403.93 193.94 427.72 drawline
+linesolid
+198.96 423.75 214.82 423.75 drawline
+198.96 423.75 198.96 407.89 drawline
+198.96 407.89 214.82 407.89 drawline
+214.82 407.89 214.82 423.75 drawline
+yellow
+214.82 407.89 198.96 423.75 fillrect
+23 setfontsize
+black
+(0,3) 206.89 415.82 censhow
+linedashed
+darkgreen
+202.13 423.75 202.13 442.52 drawline
+15 setfontsize
+black
+(1) 202.13 421.77 censhow
+darkgreen
+205.30 423.75 205.30 442.52 drawline
+15 setfontsize
+black
+(2) 205.30 421.77 censhow
+darkgreen
+208.47 423.75 208.47 442.52 drawline
+15 setfontsize
+black
+(3) 208.47 421.77 censhow
+darkgreen
+211.65 423.75 211.65 442.52 drawline
+15 setfontsize
+black
+(4) 211.65 421.77 censhow
+219.84 403.93 219.84 427.72 drawline
+220.90 403.93 220.90 427.72 drawline
+221.95 403.93 221.95 427.72 drawline
+223.01 403.93 223.01 427.72 drawline
+224.07 403.93 224.07 427.72 drawline
+225.12 403.93 225.12 427.72 drawline
+226.18 403.93 226.18 427.72 drawline
+227.24 403.93 227.24 427.72 drawline
+228.30 403.93 228.30 427.72 drawline
+229.35 403.93 229.35 427.72 drawline
+230.41 403.93 230.41 427.72 drawline
+231.47 403.93 231.47 427.72 drawline
+232.53 403.93 232.53 427.72 drawline
+233.58 403.93 233.58 427.72 drawline
+linesolid
+238.60 423.75 254.46 423.75 drawline
+238.60 423.75 238.60 407.89 drawline
+238.60 407.89 254.46 407.89 drawline
+254.46 407.89 254.46 423.75 drawline
+yellow
+254.46 407.89 238.60 423.75 fillrect
+23 setfontsize
+black
+(1,3) 246.53 415.82 censhow
+linedashed
+darkgreen
+241.78 423.75 241.78 442.52 drawline
+15 setfontsize
+black
+(1) 241.78 421.77 censhow
+darkgreen
+244.95 423.75 244.95 442.52 drawline
+15 setfontsize
+black
+(2) 244.95 421.77 censhow
+darkgreen
+248.12 423.75 248.12 442.52 drawline
+15 setfontsize
+black
+(3) 248.12 421.77 censhow
+darkgreen
+251.29 423.75 251.29 442.52 drawline
+15 setfontsize
+black
+(4) 251.29 421.77 censhow
+259.48 403.93 259.48 427.72 drawline
+260.54 403.93 260.54 427.72 drawline
+261.60 403.93 261.60 427.72 drawline
+262.66 403.93 262.66 427.72 drawline
+263.71 403.93 263.71 427.72 drawline
+264.77 403.93 264.77 427.72 drawline
+265.83 403.93 265.83 427.72 drawline
+266.88 403.93 266.88 427.72 drawline
+267.94 403.93 267.94 427.72 drawline
+269.00 403.93 269.00 427.72 drawline
+270.06 403.93 270.06 427.72 drawline
+271.11 403.93 271.11 427.72 drawline
+272.17 403.93 272.17 427.72 drawline
+273.23 403.93 273.23 427.72 drawline
+linesolid
+278.25 423.75 294.11 423.75 drawline
+278.25 423.75 278.25 407.89 drawline
+278.25 407.89 294.11 407.89 drawline
+294.11 407.89 294.11 423.75 drawline
+yellow
+294.11 407.89 278.25 423.75 fillrect
+23 setfontsize
+black
+(2,3) 286.18 415.82 censhow
+linedashed
+darkgreen
+281.42 423.75 281.42 442.52 drawline
+15 setfontsize
+black
+(1) 281.42 421.77 censhow
+darkgreen
+284.59 423.75 284.59 442.52 drawline
+15 setfontsize
+black
+(2) 284.59 421.77 censhow
+darkgreen
+287.76 423.75 287.76 442.52 drawline
+15 setfontsize
+black
+(3) 287.76 421.77 censhow
+darkgreen
+290.94 423.75 290.94 442.52 drawline
+15 setfontsize
+black
+(4) 290.94 421.77 censhow
+299.13 403.93 299.13 427.72 drawline
+300.19 403.93 300.19 427.72 drawline
+301.24 403.93 301.24 427.72 drawline
+302.30 403.93 302.30 427.72 drawline
+303.36 403.93 303.36 427.72 drawline
+304.41 403.93 304.41 427.72 drawline
+305.47 403.93 305.47 427.72 drawline
+306.53 403.93 306.53 427.72 drawline
+307.59 403.93 307.59 427.72 drawline
+308.64 403.93 308.64 427.72 drawline
+309.70 403.93 309.70 427.72 drawline
+310.76 403.93 310.76 427.72 drawline
+311.81 403.93 311.81 427.72 drawline
+312.87 403.93 312.87 427.72 drawline
+linesolid
+317.89 423.75 333.75 423.75 drawline
+317.89 423.75 317.89 407.89 drawline
+317.89 407.89 333.75 407.89 drawline
+333.75 407.89 333.75 423.75 drawline
+yellow
+333.75 407.89 317.89 423.75 fillrect
+23 setfontsize
+black
+(3,3) 325.82 415.82 censhow
+linedashed
+darkgreen
+321.06 423.75 321.06 442.52 drawline
+15 setfontsize
+black
+(1) 321.06 421.77 censhow
+darkgreen
+324.24 423.75 324.24 442.52 drawline
+15 setfontsize
+black
+(2) 324.24 421.77 censhow
+darkgreen
+327.41 423.75 327.41 442.52 drawline
+15 setfontsize
+black
+(3) 327.41 421.77 censhow
+darkgreen
+330.58 423.75 330.58 442.52 drawline
+15 setfontsize
+black
+(4) 330.58 421.77 censhow
+338.77 403.93 338.77 427.72 drawline
+339.83 403.93 339.83 427.72 drawline
+340.89 403.93 340.89 427.72 drawline
+341.94 403.93 341.94 427.72 drawline
+343.00 403.93 343.00 427.72 drawline
+344.06 403.93 344.06 427.72 drawline
+345.12 403.93 345.12 427.72 drawline
+346.17 403.93 346.17 427.72 drawline
+347.23 403.93 347.23 427.72 drawline
+348.29 403.93 348.29 427.72 drawline
+349.34 403.93 349.34 427.72 drawline
+350.40 403.93 350.40 427.72 drawline
+351.46 403.93 351.46 427.72 drawline
+352.52 403.93 352.52 427.72 drawline
+linesolid
+357.54 423.75 373.40 423.75 drawline
+357.54 423.75 357.54 407.89 drawline
+357.54 407.89 373.40 407.89 drawline
+373.40 407.89 373.40 423.75 drawline
+yellow
+373.40 407.89 357.54 423.75 fillrect
+23 setfontsize
+black
+(4,3) 365.47 415.82 censhow
+linedashed
+darkgreen
+360.71 423.75 360.71 442.52 drawline
+15 setfontsize
+black
+(1) 360.71 421.77 censhow
+darkgreen
+363.88 423.75 363.88 442.52 drawline
+15 setfontsize
+black
+(2) 363.88 421.77 censhow
+darkgreen
+367.05 423.75 367.05 442.52 drawline
+15 setfontsize
+black
+(3) 367.05 421.77 censhow
+darkgreen
+370.22 423.75 370.22 442.52 drawline
+15 setfontsize
+black
+(4) 370.22 421.77 censhow
+378.42 403.93 378.42 427.72 drawline
+379.47 403.93 379.47 427.72 drawline
+380.53 403.93 380.53 427.72 drawline
+381.59 403.93 381.59 427.72 drawline
+382.65 403.93 382.65 427.72 drawline
+383.70 403.93 383.70 427.72 drawline
+384.76 403.93 384.76 427.72 drawline
+385.82 403.93 385.82 427.72 drawline
+386.88 403.93 386.88 427.72 drawline
+387.93 403.93 387.93 427.72 drawline
+388.99 403.93 388.99 427.72 drawline
+390.05 403.93 390.05 427.72 drawline
+391.10 403.93 391.10 427.72 drawline
+392.16 403.93 392.16 427.72 drawline
+linesolid
+397.18 423.75 413.04 423.75 drawline
+397.18 423.75 397.18 407.89 drawline
+397.18 407.89 413.04 407.89 drawline
+413.04 407.89 413.04 423.75 drawline
+yellow
+413.04 407.89 397.18 423.75 fillrect
+23 setfontsize
+black
+(5,3) 405.11 415.82 censhow
+linedashed
+darkgreen
+400.35 423.75 400.35 442.52 drawline
+15 setfontsize
+black
+(1) 400.35 421.77 censhow
+darkgreen
+403.53 423.75 403.53 442.52 drawline
+15 setfontsize
+black
+(2) 403.53 421.77 censhow
+darkgreen
+406.70 423.75 406.70 442.52 drawline
+15 setfontsize
+black
+(3) 406.70 421.77 censhow
+darkgreen
+409.87 423.75 409.87 442.52 drawline
+15 setfontsize
+black
+(4) 409.87 421.77 censhow
+418.06 403.93 418.06 427.72 drawline
+419.12 403.93 419.12 427.72 drawline
+420.18 403.93 420.18 427.72 drawline
+421.23 403.93 421.23 427.72 drawline
+422.29 403.93 422.29 427.72 drawline
+423.35 403.93 423.35 427.72 drawline
+424.41 403.93 424.41 427.72 drawline
+425.46 403.93 425.46 427.72 drawline
+426.52 403.93 426.52 427.72 drawline
+427.58 403.93 427.58 427.72 drawline
+428.63 403.93 428.63 427.72 drawline
+429.69 403.93 429.69 427.72 drawline
+430.75 403.93 430.75 427.72 drawline
+431.81 403.93 431.81 427.72 drawline
+linesolid
+179.14 403.93 194.99 403.93 drawline
+179.14 403.93 179.14 388.07 drawline
+179.14 388.07 194.99 388.07 drawline
+194.99 388.07 194.99 403.93 drawline
+linedashed
+194.99 402.87 218.78 402.87 drawline
+194.99 401.81 218.78 401.81 drawline
+194.99 400.76 218.78 400.76 drawline
+194.99 399.70 218.78 399.70 drawline
+194.99 398.64 218.78 398.64 drawline
+194.99 397.59 218.78 397.59 drawline
+194.99 396.53 218.78 396.53 drawline
+194.99 395.47 218.78 395.47 drawline
+194.99 394.41 218.78 394.41 drawline
+194.99 393.36 218.78 393.36 drawline
+194.99 392.30 218.78 392.30 drawline
+194.99 391.24 218.78 391.24 drawline
+194.99 390.19 218.78 390.19 drawline
+194.99 389.13 218.78 389.13 drawline
+linesolid
+218.78 403.93 234.64 403.93 drawline
+218.78 403.93 218.78 388.07 drawline
+218.78 388.07 234.64 388.07 drawline
+234.64 388.07 234.64 403.93 drawline
+linedashed
+234.64 402.87 258.43 402.87 drawline
+234.64 401.81 258.43 401.81 drawline
+234.64 400.76 258.43 400.76 drawline
+234.64 399.70 258.43 399.70 drawline
+234.64 398.64 258.43 398.64 drawline
+234.64 397.59 258.43 397.59 drawline
+234.64 396.53 258.43 396.53 drawline
+234.64 395.47 258.43 395.47 drawline
+234.64 394.41 258.43 394.41 drawline
+234.64 393.36 258.43 393.36 drawline
+234.64 392.30 258.43 392.30 drawline
+234.64 391.24 258.43 391.24 drawline
+234.64 390.19 258.43 390.19 drawline
+234.64 389.13 258.43 389.13 drawline
+linesolid
+258.43 403.93 274.28 403.93 drawline
+258.43 403.93 258.43 388.07 drawline
+258.43 388.07 274.28 388.07 drawline
+274.28 388.07 274.28 403.93 drawline
+linedashed
+274.28 402.87 298.07 402.87 drawline
+274.28 401.81 298.07 401.81 drawline
+274.28 400.76 298.07 400.76 drawline
+274.28 399.70 298.07 399.70 drawline
+274.28 398.64 298.07 398.64 drawline
+274.28 397.59 298.07 397.59 drawline
+274.28 396.53 298.07 396.53 drawline
+274.28 395.47 298.07 395.47 drawline
+274.28 394.41 298.07 394.41 drawline
+274.28 393.36 298.07 393.36 drawline
+274.28 392.30 298.07 392.30 drawline
+274.28 391.24 298.07 391.24 drawline
+274.28 390.19 298.07 390.19 drawline
+274.28 389.13 298.07 389.13 drawline
+linesolid
+298.07 403.93 313.93 403.93 drawline
+298.07 403.93 298.07 388.07 drawline
+298.07 388.07 313.93 388.07 drawline
+313.93 388.07 313.93 403.93 drawline
+linedashed
+313.93 402.87 337.72 402.87 drawline
+313.93 401.81 337.72 401.81 drawline
+313.93 400.76 337.72 400.76 drawline
+313.93 399.70 337.72 399.70 drawline
+313.93 398.64 337.72 398.64 drawline
+313.93 397.59 337.72 397.59 drawline
+313.93 396.53 337.72 396.53 drawline
+313.93 395.47 337.72 395.47 drawline
+313.93 394.41 337.72 394.41 drawline
+313.93 393.36 337.72 393.36 drawline
+313.93 392.30 337.72 392.30 drawline
+313.93 391.24 337.72 391.24 drawline
+313.93 390.19 337.72 390.19 drawline
+313.93 389.13 337.72 389.13 drawline
+linesolid
+337.72 403.93 353.57 403.93 drawline
+337.72 403.93 337.72 388.07 drawline
+337.72 388.07 353.57 388.07 drawline
+353.57 388.07 353.57 403.93 drawline
+linedashed
+353.57 402.87 377.36 402.87 drawline
+353.57 401.81 377.36 401.81 drawline
+353.57 400.76 377.36 400.76 drawline
+353.57 399.70 377.36 399.70 drawline
+353.57 398.64 377.36 398.64 drawline
+353.57 397.59 377.36 397.59 drawline
+353.57 396.53 377.36 396.53 drawline
+353.57 395.47 377.36 395.47 drawline
+353.57 394.41 377.36 394.41 drawline
+353.57 393.36 377.36 393.36 drawline
+353.57 392.30 377.36 392.30 drawline
+353.57 391.24 377.36 391.24 drawline
+353.57 390.19 377.36 390.19 drawline
+353.57 389.13 377.36 389.13 drawline
+linesolid
+377.36 403.93 393.22 403.93 drawline
+377.36 403.93 377.36 388.07 drawline
+377.36 388.07 393.22 388.07 drawline
+393.22 388.07 393.22 403.93 drawline
+linedashed
+393.22 402.87 417.01 402.87 drawline
+393.22 401.81 417.01 401.81 drawline
+393.22 400.76 417.01 400.76 drawline
+393.22 399.70 417.01 399.70 drawline
+393.22 398.64 417.01 398.64 drawline
+393.22 397.59 417.01 397.59 drawline
+393.22 396.53 417.01 396.53 drawline
+393.22 395.47 417.01 395.47 drawline
+393.22 394.41 417.01 394.41 drawline
+393.22 393.36 417.01 393.36 drawline
+393.22 392.30 417.01 392.30 drawline
+393.22 391.24 417.01 391.24 drawline
+393.22 390.19 417.01 390.19 drawline
+393.22 389.13 417.01 389.13 drawline
+linesolid
+417.01 403.93 432.86 403.93 drawline
+417.01 403.93 417.01 388.07 drawline
+417.01 388.07 432.86 388.07 drawline
+432.86 388.07 432.86 403.93 drawline
+linedashed
+180.19 364.28 180.19 388.07 drawline
+181.25 364.28 181.25 388.07 drawline
+182.31 364.28 182.31 388.07 drawline
+183.37 364.28 183.37 388.07 drawline
+184.42 364.28 184.42 388.07 drawline
+185.48 364.28 185.48 388.07 drawline
+186.54 364.28 186.54 388.07 drawline
+187.59 364.28 187.59 388.07 drawline
+188.65 364.28 188.65 388.07 drawline
+189.71 364.28 189.71 388.07 drawline
+190.77 364.28 190.77 388.07 drawline
+191.82 364.28 191.82 388.07 drawline
+192.88 364.28 192.88 388.07 drawline
+193.94 364.28 193.94 388.07 drawline
+linesolid
+198.96 384.11 214.82 384.11 drawline
+198.96 384.11 198.96 368.25 drawline
+198.96 368.25 214.82 368.25 drawline
+214.82 368.25 214.82 384.11 drawline
+yellow
+214.82 368.25 198.96 384.11 fillrect
+23 setfontsize
+black
+(0,2) 206.89 376.18 censhow
+linedashed
+darkgreen
+202.13 384.11 202.13 402.87 drawline
+15 setfontsize
+black
+(1) 202.13 382.12 censhow
+darkgreen
+205.30 384.11 205.30 402.87 drawline
+15 setfontsize
+black
+(2) 205.30 382.12 censhow
+darkgreen
+208.47 384.11 208.47 402.87 drawline
+15 setfontsize
+black
+(3) 208.47 382.12 censhow
+darkgreen
+211.65 384.11 211.65 402.87 drawline
+15 setfontsize
+black
+(4) 211.65 382.12 censhow
+219.84 364.28 219.84 388.07 drawline
+220.90 364.28 220.90 388.07 drawline
+221.95 364.28 221.95 388.07 drawline
+223.01 364.28 223.01 388.07 drawline
+224.07 364.28 224.07 388.07 drawline
+225.12 364.28 225.12 388.07 drawline
+226.18 364.28 226.18 388.07 drawline
+227.24 364.28 227.24 388.07 drawline
+228.30 364.28 228.30 388.07 drawline
+229.35 364.28 229.35 388.07 drawline
+230.41 364.28 230.41 388.07 drawline
+231.47 364.28 231.47 388.07 drawline
+232.53 364.28 232.53 388.07 drawline
+233.58 364.28 233.58 388.07 drawline
+linesolid
+238.60 384.11 254.46 384.11 drawline
+238.60 384.11 238.60 368.25 drawline
+238.60 368.25 254.46 368.25 drawline
+254.46 368.25 254.46 384.11 drawline
+yellow
+254.46 368.25 238.60 384.11 fillrect
+23 setfontsize
+black
+(1,2) 246.53 376.18 censhow
+linedashed
+darkgreen
+241.78 384.11 241.78 402.87 drawline
+15 setfontsize
+black
+(1) 241.78 382.12 censhow
+darkgreen
+244.95 384.11 244.95 402.87 drawline
+15 setfontsize
+black
+(2) 244.95 382.12 censhow
+darkgreen
+248.12 384.11 248.12 402.87 drawline
+15 setfontsize
+black
+(3) 248.12 382.12 censhow
+darkgreen
+251.29 384.11 251.29 402.87 drawline
+15 setfontsize
+black
+(4) 251.29 382.12 censhow
+259.48 364.28 259.48 388.07 drawline
+260.54 364.28 260.54 388.07 drawline
+261.60 364.28 261.60 388.07 drawline
+262.66 364.28 262.66 388.07 drawline
+263.71 364.28 263.71 388.07 drawline
+264.77 364.28 264.77 388.07 drawline
+265.83 364.28 265.83 388.07 drawline
+266.88 364.28 266.88 388.07 drawline
+267.94 364.28 267.94 388.07 drawline
+269.00 364.28 269.00 388.07 drawline
+270.06 364.28 270.06 388.07 drawline
+271.11 364.28 271.11 388.07 drawline
+272.17 364.28 272.17 388.07 drawline
+273.23 364.28 273.23 388.07 drawline
+linesolid
+278.25 384.11 294.11 384.11 drawline
+278.25 384.11 278.25 368.25 drawline
+278.25 368.25 294.11 368.25 drawline
+294.11 368.25 294.11 384.11 drawline
+yellow
+294.11 368.25 278.25 384.11 fillrect
+23 setfontsize
+black
+(2,2) 286.18 376.18 censhow
+linedashed
+darkgreen
+281.42 384.11 281.42 402.87 drawline
+15 setfontsize
+black
+(1) 281.42 382.12 censhow
+darkgreen
+284.59 384.11 284.59 402.87 drawline
+15 setfontsize
+black
+(2) 284.59 382.12 censhow
+darkgreen
+287.76 384.11 287.76 402.87 drawline
+15 setfontsize
+black
+(3) 287.76 382.12 censhow
+darkgreen
+290.94 384.11 290.94 402.87 drawline
+15 setfontsize
+black
+(4) 290.94 382.12 censhow
+299.13 364.28 299.13 388.07 drawline
+300.19 364.28 300.19 388.07 drawline
+301.24 364.28 301.24 388.07 drawline
+302.30 364.28 302.30 388.07 drawline
+303.36 364.28 303.36 388.07 drawline
+304.41 364.28 304.41 388.07 drawline
+305.47 364.28 305.47 388.07 drawline
+306.53 364.28 306.53 388.07 drawline
+307.59 364.28 307.59 388.07 drawline
+308.64 364.28 308.64 388.07 drawline
+309.70 364.28 309.70 388.07 drawline
+310.76 364.28 310.76 388.07 drawline
+311.81 364.28 311.81 388.07 drawline
+312.87 364.28 312.87 388.07 drawline
+linesolid
+317.89 384.11 333.75 384.11 drawline
+317.89 384.11 317.89 368.25 drawline
+317.89 368.25 333.75 368.25 drawline
+333.75 368.25 333.75 384.11 drawline
+yellow
+333.75 368.25 317.89 384.11 fillrect
+23 setfontsize
+black
+(3,2) 325.82 376.18 censhow
+linedashed
+darkgreen
+321.06 384.11 321.06 402.87 drawline
+15 setfontsize
+black
+(1) 321.06 382.12 censhow
+darkgreen
+324.24 384.11 324.24 402.87 drawline
+15 setfontsize
+black
+(2) 324.24 382.12 censhow
+darkgreen
+327.41 384.11 327.41 402.87 drawline
+15 setfontsize
+black
+(3) 327.41 382.12 censhow
+darkgreen
+330.58 384.11 330.58 402.87 drawline
+15 setfontsize
+black
+(4) 330.58 382.12 censhow
+338.77 364.28 338.77 388.07 drawline
+339.83 364.28 339.83 388.07 drawline
+340.89 364.28 340.89 388.07 drawline
+341.94 364.28 341.94 388.07 drawline
+343.00 364.28 343.00 388.07 drawline
+344.06 364.28 344.06 388.07 drawline
+345.12 364.28 345.12 388.07 drawline
+346.17 364.28 346.17 388.07 drawline
+347.23 364.28 347.23 388.07 drawline
+348.29 364.28 348.29 388.07 drawline
+349.34 364.28 349.34 388.07 drawline
+350.40 364.28 350.40 388.07 drawline
+351.46 364.28 351.46 388.07 drawline
+352.52 364.28 352.52 388.07 drawline
+linesolid
+357.54 384.11 373.40 384.11 drawline
+357.54 384.11 357.54 368.25 drawline
+357.54 368.25 373.40 368.25 drawline
+373.40 368.25 373.40 384.11 drawline
+yellow
+373.40 368.25 357.54 384.11 fillrect
+23 setfontsize
+black
+(4,2) 365.47 376.18 censhow
+linedashed
+darkgreen
+360.71 384.11 360.71 402.87 drawline
+15 setfontsize
+black
+(1) 360.71 382.12 censhow
+darkgreen
+363.88 384.11 363.88 402.87 drawline
+15 setfontsize
+black
+(2) 363.88 382.12 censhow
+darkgreen
+367.05 384.11 367.05 402.87 drawline
+15 setfontsize
+black
+(3) 367.05 382.12 censhow
+darkgreen
+370.22 384.11 370.22 402.87 drawline
+15 setfontsize
+black
+(4) 370.22 382.12 censhow
+378.42 364.28 378.42 388.07 drawline
+379.47 364.28 379.47 388.07 drawline
+380.53 364.28 380.53 388.07 drawline
+381.59 364.28 381.59 388.07 drawline
+382.65 364.28 382.65 388.07 drawline
+383.70 364.28 383.70 388.07 drawline
+384.76 364.28 384.76 388.07 drawline
+385.82 364.28 385.82 388.07 drawline
+386.88 364.28 386.88 388.07 drawline
+387.93 364.28 387.93 388.07 drawline
+388.99 364.28 388.99 388.07 drawline
+390.05 364.28 390.05 388.07 drawline
+391.10 364.28 391.10 388.07 drawline
+392.16 364.28 392.16 388.07 drawline
+linesolid
+397.18 384.11 413.04 384.11 drawline
+397.18 384.11 397.18 368.25 drawline
+397.18 368.25 413.04 368.25 drawline
+413.04 368.25 413.04 384.11 drawline
+yellow
+413.04 368.25 397.18 384.11 fillrect
+23 setfontsize
+black
+(5,2) 405.11 376.18 censhow
+linedashed
+darkgreen
+400.35 384.11 400.35 402.87 drawline
+15 setfontsize
+black
+(1) 400.35 382.12 censhow
+darkgreen
+403.53 384.11 403.53 402.87 drawline
+15 setfontsize
+black
+(2) 403.53 382.12 censhow
+darkgreen
+406.70 384.11 406.70 402.87 drawline
+15 setfontsize
+black
+(3) 406.70 382.12 censhow
+darkgreen
+409.87 384.11 409.87 402.87 drawline
+15 setfontsize
+black
+(4) 409.87 382.12 censhow
+418.06 364.28 418.06 388.07 drawline
+419.12 364.28 419.12 388.07 drawline
+420.18 364.28 420.18 388.07 drawline
+421.23 364.28 421.23 388.07 drawline
+422.29 364.28 422.29 388.07 drawline
+423.35 364.28 423.35 388.07 drawline
+424.41 364.28 424.41 388.07 drawline
+425.46 364.28 425.46 388.07 drawline
+426.52 364.28 426.52 388.07 drawline
+427.58 364.28 427.58 388.07 drawline
+428.63 364.28 428.63 388.07 drawline
+429.69 364.28 429.69 388.07 drawline
+430.75 364.28 430.75 388.07 drawline
+431.81 364.28 431.81 388.07 drawline
+linesolid
+179.14 364.28 194.99 364.28 drawline
+179.14 364.28 179.14 348.43 drawline
+179.14 348.43 194.99 348.43 drawline
+194.99 348.43 194.99 364.28 drawline
+linedashed
+194.99 363.23 218.78 363.23 drawline
+194.99 362.17 218.78 362.17 drawline
+194.99 361.11 218.78 361.11 drawline
+194.99 360.06 218.78 360.06 drawline
+194.99 359.00 218.78 359.00 drawline
+194.99 357.94 218.78 357.94 drawline
+194.99 356.88 218.78 356.88 drawline
+194.99 355.83 218.78 355.83 drawline
+194.99 354.77 218.78 354.77 drawline
+194.99 353.71 218.78 353.71 drawline
+194.99 352.66 218.78 352.66 drawline
+194.99 351.60 218.78 351.60 drawline
+194.99 350.54 218.78 350.54 drawline
+194.99 349.48 218.78 349.48 drawline
+linesolid
+218.78 364.28 234.64 364.28 drawline
+218.78 364.28 218.78 348.43 drawline
+218.78 348.43 234.64 348.43 drawline
+234.64 348.43 234.64 364.28 drawline
+linedashed
+234.64 363.23 258.43 363.23 drawline
+234.64 362.17 258.43 362.17 drawline
+234.64 361.11 258.43 361.11 drawline
+234.64 360.06 258.43 360.06 drawline
+234.64 359.00 258.43 359.00 drawline
+234.64 357.94 258.43 357.94 drawline
+234.64 356.88 258.43 356.88 drawline
+234.64 355.83 258.43 355.83 drawline
+234.64 354.77 258.43 354.77 drawline
+234.64 353.71 258.43 353.71 drawline
+234.64 352.66 258.43 352.66 drawline
+234.64 351.60 258.43 351.60 drawline
+234.64 350.54 258.43 350.54 drawline
+234.64 349.48 258.43 349.48 drawline
+linesolid
+258.43 364.28 274.28 364.28 drawline
+258.43 364.28 258.43 348.43 drawline
+258.43 348.43 274.28 348.43 drawline
+274.28 348.43 274.28 364.28 drawline
+linedashed
+274.28 363.23 298.07 363.23 drawline
+274.28 362.17 298.07 362.17 drawline
+274.28 361.11 298.07 361.11 drawline
+274.28 360.06 298.07 360.06 drawline
+274.28 359.00 298.07 359.00 drawline
+274.28 357.94 298.07 357.94 drawline
+274.28 356.88 298.07 356.88 drawline
+274.28 355.83 298.07 355.83 drawline
+274.28 354.77 298.07 354.77 drawline
+274.28 353.71 298.07 353.71 drawline
+274.28 352.66 298.07 352.66 drawline
+274.28 351.60 298.07 351.60 drawline
+274.28 350.54 298.07 350.54 drawline
+274.28 349.48 298.07 349.48 drawline
+linesolid
+298.07 364.28 313.93 364.28 drawline
+298.07 364.28 298.07 348.43 drawline
+298.07 348.43 313.93 348.43 drawline
+313.93 348.43 313.93 364.28 drawline
+linedashed
+313.93 363.23 337.72 363.23 drawline
+313.93 362.17 337.72 362.17 drawline
+313.93 361.11 337.72 361.11 drawline
+313.93 360.06 337.72 360.06 drawline
+313.93 359.00 337.72 359.00 drawline
+313.93 357.94 337.72 357.94 drawline
+313.93 356.88 337.72 356.88 drawline
+313.93 355.83 337.72 355.83 drawline
+313.93 354.77 337.72 354.77 drawline
+313.93 353.71 337.72 353.71 drawline
+313.93 352.66 337.72 352.66 drawline
+313.93 351.60 337.72 351.60 drawline
+313.93 350.54 337.72 350.54 drawline
+313.93 349.48 337.72 349.48 drawline
+linesolid
+337.72 364.28 353.57 364.28 drawline
+337.72 364.28 337.72 348.43 drawline
+337.72 348.43 353.57 348.43 drawline
+353.57 348.43 353.57 364.28 drawline
+linedashed
+353.57 363.23 377.36 363.23 drawline
+353.57 362.17 377.36 362.17 drawline
+353.57 361.11 377.36 361.11 drawline
+353.57 360.06 377.36 360.06 drawline
+353.57 359.00 377.36 359.00 drawline
+353.57 357.94 377.36 357.94 drawline
+353.57 356.88 377.36 356.88 drawline
+353.57 355.83 377.36 355.83 drawline
+353.57 354.77 377.36 354.77 drawline
+353.57 353.71 377.36 353.71 drawline
+353.57 352.66 377.36 352.66 drawline
+353.57 351.60 377.36 351.60 drawline
+353.57 350.54 377.36 350.54 drawline
+353.57 349.48 377.36 349.48 drawline
+linesolid
+377.36 364.28 393.22 364.28 drawline
+377.36 364.28 377.36 348.43 drawline
+377.36 348.43 393.22 348.43 drawline
+393.22 348.43 393.22 364.28 drawline
+linedashed
+393.22 363.23 417.01 363.23 drawline
+393.22 362.17 417.01 362.17 drawline
+393.22 361.11 417.01 361.11 drawline
+393.22 360.06 417.01 360.06 drawline
+393.22 359.00 417.01 359.00 drawline
+393.22 357.94 417.01 357.94 drawline
+393.22 356.88 417.01 356.88 drawline
+393.22 355.83 417.01 355.83 drawline
+393.22 354.77 417.01 354.77 drawline
+393.22 353.71 417.01 353.71 drawline
+393.22 352.66 417.01 352.66 drawline
+393.22 351.60 417.01 351.60 drawline
+393.22 350.54 417.01 350.54 drawline
+393.22 349.48 417.01 349.48 drawline
+linesolid
+417.01 364.28 432.86 364.28 drawline
+417.01 364.28 417.01 348.43 drawline
+417.01 348.43 432.86 348.43 drawline
+432.86 348.43 432.86 364.28 drawline
+linedashed
+180.19 324.64 180.19 348.43 drawline
+181.25 324.64 181.25 348.43 drawline
+182.31 324.64 182.31 348.43 drawline
+183.37 324.64 183.37 348.43 drawline
+184.42 324.64 184.42 348.43 drawline
+185.48 324.64 185.48 348.43 drawline
+186.54 324.64 186.54 348.43 drawline
+187.59 324.64 187.59 348.43 drawline
+188.65 324.64 188.65 348.43 drawline
+189.71 324.64 189.71 348.43 drawline
+190.77 324.64 190.77 348.43 drawline
+191.82 324.64 191.82 348.43 drawline
+192.88 324.64 192.88 348.43 drawline
+193.94 324.64 193.94 348.43 drawline
+linesolid
+198.96 344.46 214.82 344.46 drawline
+198.96 344.46 198.96 328.60 drawline
+198.96 328.60 214.82 328.60 drawline
+214.82 328.60 214.82 344.46 drawline
+yellow
+214.82 328.60 198.96 344.46 fillrect
+23 setfontsize
+black
+(0,1) 206.89 336.53 censhow
+linedashed
+darkgreen
+202.13 344.46 202.13 363.23 drawline
+15 setfontsize
+black
+(1) 202.13 342.48 censhow
+darkgreen
+205.30 344.46 205.30 363.23 drawline
+15 setfontsize
+black
+(2) 205.30 342.48 censhow
+darkgreen
+208.47 344.46 208.47 363.23 drawline
+15 setfontsize
+black
+(3) 208.47 342.48 censhow
+darkgreen
+211.65 344.46 211.65 363.23 drawline
+15 setfontsize
+black
+(4) 211.65 342.48 censhow
+219.84 324.64 219.84 348.43 drawline
+220.90 324.64 220.90 348.43 drawline
+221.95 324.64 221.95 348.43 drawline
+223.01 324.64 223.01 348.43 drawline
+224.07 324.64 224.07 348.43 drawline
+225.12 324.64 225.12 348.43 drawline
+226.18 324.64 226.18 348.43 drawline
+227.24 324.64 227.24 348.43 drawline
+228.30 324.64 228.30 348.43 drawline
+229.35 324.64 229.35 348.43 drawline
+230.41 324.64 230.41 348.43 drawline
+231.47 324.64 231.47 348.43 drawline
+232.53 324.64 232.53 348.43 drawline
+233.58 324.64 233.58 348.43 drawline
+linesolid
+238.60 344.46 254.46 344.46 drawline
+238.60 344.46 238.60 328.60 drawline
+238.60 328.60 254.46 328.60 drawline
+254.46 328.60 254.46 344.46 drawline
+yellow
+254.46 328.60 238.60 344.46 fillrect
+23 setfontsize
+black
+(1,1) 246.53 336.53 censhow
+linedashed
+darkgreen
+241.78 344.46 241.78 363.23 drawline
+15 setfontsize
+black
+(1) 241.78 342.48 censhow
+darkgreen
+244.95 344.46 244.95 363.23 drawline
+15 setfontsize
+black
+(2) 244.95 342.48 censhow
+darkgreen
+248.12 344.46 248.12 363.23 drawline
+15 setfontsize
+black
+(3) 248.12 342.48 censhow
+darkgreen
+251.29 344.46 251.29 363.23 drawline
+15 setfontsize
+black
+(4) 251.29 342.48 censhow
+259.48 324.64 259.48 348.43 drawline
+260.54 324.64 260.54 348.43 drawline
+261.60 324.64 261.60 348.43 drawline
+262.66 324.64 262.66 348.43 drawline
+263.71 324.64 263.71 348.43 drawline
+264.77 324.64 264.77 348.43 drawline
+265.83 324.64 265.83 348.43 drawline
+266.88 324.64 266.88 348.43 drawline
+267.94 324.64 267.94 348.43 drawline
+269.00 324.64 269.00 348.43 drawline
+270.06 324.64 270.06 348.43 drawline
+271.11 324.64 271.11 348.43 drawline
+272.17 324.64 272.17 348.43 drawline
+273.23 324.64 273.23 348.43 drawline
+linesolid
+278.25 344.46 294.11 344.46 drawline
+278.25 344.46 278.25 328.60 drawline
+278.25 328.60 294.11 328.60 drawline
+294.11 328.60 294.11 344.46 drawline
+yellow
+294.11 328.60 278.25 344.46 fillrect
+23 setfontsize
+black
+(2,1) 286.18 336.53 censhow
+linedashed
+darkgreen
+281.42 344.46 281.42 363.23 drawline
+15 setfontsize
+black
+(1) 281.42 342.48 censhow
+darkgreen
+284.59 344.46 284.59 363.23 drawline
+15 setfontsize
+black
+(2) 284.59 342.48 censhow
+darkgreen
+287.76 344.46 287.76 363.23 drawline
+15 setfontsize
+black
+(3) 287.76 342.48 censhow
+darkgreen
+290.94 344.46 290.94 363.23 drawline
+15 setfontsize
+black
+(4) 290.94 342.48 censhow
+299.13 324.64 299.13 348.43 drawline
+300.19 324.64 300.19 348.43 drawline
+301.24 324.64 301.24 348.43 drawline
+302.30 324.64 302.30 348.43 drawline
+303.36 324.64 303.36 348.43 drawline
+304.41 324.64 304.41 348.43 drawline
+305.47 324.64 305.47 348.43 drawline
+306.53 324.64 306.53 348.43 drawline
+307.59 324.64 307.59 348.43 drawline
+308.64 324.64 308.64 348.43 drawline
+309.70 324.64 309.70 348.43 drawline
+310.76 324.64 310.76 348.43 drawline
+311.81 324.64 311.81 348.43 drawline
+312.87 324.64 312.87 348.43 drawline
+linesolid
+317.89 344.46 333.75 344.46 drawline
+317.89 344.46 317.89 328.60 drawline
+317.89 328.60 333.75 328.60 drawline
+333.75 328.60 333.75 344.46 drawline
+yellow
+333.75 328.60 317.89 344.46 fillrect
+23 setfontsize
+black
+(3,1) 325.82 336.53 censhow
+linedashed
+darkgreen
+321.06 344.46 321.06 363.23 drawline
+15 setfontsize
+black
+(1) 321.06 342.48 censhow
+darkgreen
+324.24 344.46 324.24 363.23 drawline
+15 setfontsize
+black
+(2) 324.24 342.48 censhow
+darkgreen
+327.41 344.46 327.41 363.23 drawline
+15 setfontsize
+black
+(3) 327.41 342.48 censhow
+darkgreen
+330.58 344.46 330.58 363.23 drawline
+15 setfontsize
+black
+(4) 330.58 342.48 censhow
+338.77 324.64 338.77 348.43 drawline
+339.83 324.64 339.83 348.43 drawline
+340.89 324.64 340.89 348.43 drawline
+341.94 324.64 341.94 348.43 drawline
+343.00 324.64 343.00 348.43 drawline
+344.06 324.64 344.06 348.43 drawline
+345.12 324.64 345.12 348.43 drawline
+346.17 324.64 346.17 348.43 drawline
+347.23 324.64 347.23 348.43 drawline
+348.29 324.64 348.29 348.43 drawline
+349.34 324.64 349.34 348.43 drawline
+350.40 324.64 350.40 348.43 drawline
+351.46 324.64 351.46 348.43 drawline
+352.52 324.64 352.52 348.43 drawline
+linesolid
+357.54 344.46 373.40 344.46 drawline
+357.54 344.46 357.54 328.60 drawline
+357.54 328.60 373.40 328.60 drawline
+373.40 328.60 373.40 344.46 drawline
+yellow
+373.40 328.60 357.54 344.46 fillrect
+23 setfontsize
+black
+(4,1) 365.47 336.53 censhow
+linedashed
+darkgreen
+360.71 344.46 360.71 363.23 drawline
+15 setfontsize
+black
+(1) 360.71 342.48 censhow
+darkgreen
+363.88 344.46 363.88 363.23 drawline
+15 setfontsize
+black
+(2) 363.88 342.48 censhow
+darkgreen
+367.05 344.46 367.05 363.23 drawline
+15 setfontsize
+black
+(3) 367.05 342.48 censhow
+darkgreen
+370.22 344.46 370.22 363.23 drawline
+15 setfontsize
+black
+(4) 370.22 342.48 censhow
+378.42 324.64 378.42 348.43 drawline
+379.47 324.64 379.47 348.43 drawline
+380.53 324.64 380.53 348.43 drawline
+381.59 324.64 381.59 348.43 drawline
+382.65 324.64 382.65 348.43 drawline
+383.70 324.64 383.70 348.43 drawline
+384.76 324.64 384.76 348.43 drawline
+385.82 324.64 385.82 348.43 drawline
+386.88 324.64 386.88 348.43 drawline
+387.93 324.64 387.93 348.43 drawline
+388.99 324.64 388.99 348.43 drawline
+390.05 324.64 390.05 348.43 drawline
+391.10 324.64 391.10 348.43 drawline
+392.16 324.64 392.16 348.43 drawline
+linesolid
+397.18 344.46 413.04 344.46 drawline
+397.18 344.46 397.18 328.60 drawline
+397.18 328.60 413.04 328.60 drawline
+413.04 328.60 413.04 344.46 drawline
+yellow
+413.04 328.60 397.18 344.46 fillrect
+23 setfontsize
+black
+(5,1) 405.11 336.53 censhow
+linedashed
+darkgreen
+400.35 344.46 400.35 363.23 drawline
+15 setfontsize
+black
+(1) 400.35 342.48 censhow
+darkgreen
+403.53 344.46 403.53 363.23 drawline
+15 setfontsize
+black
+(2) 403.53 342.48 censhow
+darkgreen
+406.70 344.46 406.70 363.23 drawline
+15 setfontsize
+black
+(3) 406.70 342.48 censhow
+darkgreen
+409.87 344.46 409.87 363.23 drawline
+15 setfontsize
+black
+(4) 409.87 342.48 censhow
+418.06 324.64 418.06 348.43 drawline
+419.12 324.64 419.12 348.43 drawline
+420.18 324.64 420.18 348.43 drawline
+421.23 324.64 421.23 348.43 drawline
+422.29 324.64 422.29 348.43 drawline
+423.35 324.64 423.35 348.43 drawline
+424.41 324.64 424.41 348.43 drawline
+425.46 324.64 425.46 348.43 drawline
+426.52 324.64 426.52 348.43 drawline
+427.58 324.64 427.58 348.43 drawline
+428.63 324.64 428.63 348.43 drawline
+429.69 324.64 429.69 348.43 drawline
+430.75 324.64 430.75 348.43 drawline
+431.81 324.64 431.81 348.43 drawline
+linesolid
+179.14 324.64 194.99 324.64 drawline
+179.14 324.64 179.14 308.78 drawline
+179.14 308.78 194.99 308.78 drawline
+194.99 308.78 194.99 324.64 drawline
+linedashed
+194.99 323.58 218.78 323.58 drawline
+194.99 322.53 218.78 322.53 drawline
+194.99 321.47 218.78 321.47 drawline
+194.99 320.41 218.78 320.41 drawline
+194.99 319.35 218.78 319.35 drawline
+194.99 318.30 218.78 318.30 drawline
+194.99 317.24 218.78 317.24 drawline
+194.99 316.18 218.78 316.18 drawline
+194.99 315.12 218.78 315.12 drawline
+194.99 314.07 218.78 314.07 drawline
+194.99 313.01 218.78 313.01 drawline
+194.99 311.95 218.78 311.95 drawline
+194.99 310.90 218.78 310.90 drawline
+194.99 309.84 218.78 309.84 drawline
+linesolid
+218.78 324.64 234.64 324.64 drawline
+218.78 324.64 218.78 308.78 drawline
+218.78 308.78 234.64 308.78 drawline
+234.64 308.78 234.64 324.64 drawline
+linedashed
+234.64 323.58 258.43 323.58 drawline
+234.64 322.53 258.43 322.53 drawline
+234.64 321.47 258.43 321.47 drawline
+234.64 320.41 258.43 320.41 drawline
+234.64 319.35 258.43 319.35 drawline
+234.64 318.30 258.43 318.30 drawline
+234.64 317.24 258.43 317.24 drawline
+234.64 316.18 258.43 316.18 drawline
+234.64 315.12 258.43 315.12 drawline
+234.64 314.07 258.43 314.07 drawline
+234.64 313.01 258.43 313.01 drawline
+234.64 311.95 258.43 311.95 drawline
+234.64 310.90 258.43 310.90 drawline
+234.64 309.84 258.43 309.84 drawline
+linesolid
+258.43 324.64 274.28 324.64 drawline
+258.43 324.64 258.43 308.78 drawline
+258.43 308.78 274.28 308.78 drawline
+274.28 308.78 274.28 324.64 drawline
+linedashed
+274.28 323.58 298.07 323.58 drawline
+274.28 322.53 298.07 322.53 drawline
+274.28 321.47 298.07 321.47 drawline
+274.28 320.41 298.07 320.41 drawline
+274.28 319.35 298.07 319.35 drawline
+274.28 318.30 298.07 318.30 drawline
+274.28 317.24 298.07 317.24 drawline
+274.28 316.18 298.07 316.18 drawline
+274.28 315.12 298.07 315.12 drawline
+274.28 314.07 298.07 314.07 drawline
+274.28 313.01 298.07 313.01 drawline
+274.28 311.95 298.07 311.95 drawline
+274.28 310.90 298.07 310.90 drawline
+274.28 309.84 298.07 309.84 drawline
+linesolid
+298.07 324.64 313.93 324.64 drawline
+298.07 324.64 298.07 308.78 drawline
+298.07 308.78 313.93 308.78 drawline
+313.93 308.78 313.93 324.64 drawline
+linedashed
+313.93 323.58 337.72 323.58 drawline
+313.93 322.53 337.72 322.53 drawline
+313.93 321.47 337.72 321.47 drawline
+313.93 320.41 337.72 320.41 drawline
+313.93 319.35 337.72 319.35 drawline
+313.93 318.30 337.72 318.30 drawline
+313.93 317.24 337.72 317.24 drawline
+313.93 316.18 337.72 316.18 drawline
+313.93 315.12 337.72 315.12 drawline
+313.93 314.07 337.72 314.07 drawline
+313.93 313.01 337.72 313.01 drawline
+313.93 311.95 337.72 311.95 drawline
+313.93 310.90 337.72 310.90 drawline
+313.93 309.84 337.72 309.84 drawline
+linesolid
+337.72 324.64 353.57 324.64 drawline
+337.72 324.64 337.72 308.78 drawline
+337.72 308.78 353.57 308.78 drawline
+353.57 308.78 353.57 324.64 drawline
+linedashed
+353.57 323.58 377.36 323.58 drawline
+353.57 322.53 377.36 322.53 drawline
+353.57 321.47 377.36 321.47 drawline
+353.57 320.41 377.36 320.41 drawline
+353.57 319.35 377.36 319.35 drawline
+353.57 318.30 377.36 318.30 drawline
+353.57 317.24 377.36 317.24 drawline
+353.57 316.18 377.36 316.18 drawline
+353.57 315.12 377.36 315.12 drawline
+353.57 314.07 377.36 314.07 drawline
+353.57 313.01 377.36 313.01 drawline
+353.57 311.95 377.36 311.95 drawline
+353.57 310.90 377.36 310.90 drawline
+353.57 309.84 377.36 309.84 drawline
+linesolid
+377.36 324.64 393.22 324.64 drawline
+377.36 324.64 377.36 308.78 drawline
+377.36 308.78 393.22 308.78 drawline
+393.22 308.78 393.22 324.64 drawline
+linedashed
+393.22 323.58 417.01 323.58 drawline
+393.22 322.53 417.01 322.53 drawline
+393.22 321.47 417.01 321.47 drawline
+393.22 320.41 417.01 320.41 drawline
+393.22 319.35 417.01 319.35 drawline
+393.22 318.30 417.01 318.30 drawline
+393.22 317.24 417.01 317.24 drawline
+393.22 316.18 417.01 316.18 drawline
+393.22 315.12 417.01 315.12 drawline
+393.22 314.07 417.01 314.07 drawline
+393.22 313.01 417.01 313.01 drawline
+393.22 311.95 417.01 311.95 drawline
+393.22 310.90 417.01 310.90 drawline
+393.22 309.84 417.01 309.84 drawline
+linesolid
+417.01 324.64 432.86 324.64 drawline
+417.01 324.64 417.01 308.78 drawline
+417.01 308.78 432.86 308.78 drawline
+432.86 308.78 432.86 324.64 drawline
+linedashed
+180.19 284.99 180.19 308.78 drawline
+181.25 284.99 181.25 308.78 drawline
+182.31 284.99 182.31 308.78 drawline
+183.37 284.99 183.37 308.78 drawline
+184.42 284.99 184.42 308.78 drawline
+185.48 284.99 185.48 308.78 drawline
+186.54 284.99 186.54 308.78 drawline
+187.59 284.99 187.59 308.78 drawline
+188.65 284.99 188.65 308.78 drawline
+189.71 284.99 189.71 308.78 drawline
+190.77 284.99 190.77 308.78 drawline
+191.82 284.99 191.82 308.78 drawline
+192.88 284.99 192.88 308.78 drawline
+193.94 284.99 193.94 308.78 drawline
+linesolid
+198.96 304.82 214.82 304.82 drawline
+198.96 304.82 198.96 288.96 drawline
+198.96 288.96 214.82 288.96 drawline
+214.82 288.96 214.82 304.82 drawline
+yellow
+214.82 288.96 198.96 304.82 fillrect
+23 setfontsize
+black
+(0,0) 206.89 296.89 censhow
+linedashed
+darkgreen
+202.13 304.82 202.13 323.58 drawline
+15 setfontsize
+black
+(1) 202.13 302.83 censhow
+darkgreen
+205.30 304.82 205.30 323.58 drawline
+15 setfontsize
+black
+(2) 205.30 302.83 censhow
+darkgreen
+208.47 304.82 208.47 323.58 drawline
+15 setfontsize
+black
+(3) 208.47 302.83 censhow
+darkgreen
+211.65 304.82 211.65 323.58 drawline
+15 setfontsize
+black
+(4) 211.65 302.83 censhow
+219.84 284.99 219.84 308.78 drawline
+220.90 284.99 220.90 308.78 drawline
+221.95 284.99 221.95 308.78 drawline
+223.01 284.99 223.01 308.78 drawline
+224.07 284.99 224.07 308.78 drawline
+225.12 284.99 225.12 308.78 drawline
+226.18 284.99 226.18 308.78 drawline
+227.24 284.99 227.24 308.78 drawline
+228.30 284.99 228.30 308.78 drawline
+229.35 284.99 229.35 308.78 drawline
+230.41 284.99 230.41 308.78 drawline
+231.47 284.99 231.47 308.78 drawline
+232.53 284.99 232.53 308.78 drawline
+233.58 284.99 233.58 308.78 drawline
+linesolid
+238.60 304.82 254.46 304.82 drawline
+238.60 304.82 238.60 288.96 drawline
+238.60 288.96 254.46 288.96 drawline
+254.46 288.96 254.46 304.82 drawline
+yellow
+254.46 288.96 238.60 304.82 fillrect
+23 setfontsize
+black
+(1,0) 246.53 296.89 censhow
+linedashed
+darkgreen
+241.78 304.82 241.78 323.58 drawline
+15 setfontsize
+black
+(1) 241.78 302.83 censhow
+darkgreen
+244.95 304.82 244.95 323.58 drawline
+15 setfontsize
+black
+(2) 244.95 302.83 censhow
+darkgreen
+248.12 304.82 248.12 323.58 drawline
+15 setfontsize
+black
+(3) 248.12 302.83 censhow
+darkgreen
+251.29 304.82 251.29 323.58 drawline
+15 setfontsize
+black
+(4) 251.29 302.83 censhow
+259.48 284.99 259.48 308.78 drawline
+260.54 284.99 260.54 308.78 drawline
+261.60 284.99 261.60 308.78 drawline
+262.66 284.99 262.66 308.78 drawline
+263.71 284.99 263.71 308.78 drawline
+264.77 284.99 264.77 308.78 drawline
+265.83 284.99 265.83 308.78 drawline
+266.88 284.99 266.88 308.78 drawline
+267.94 284.99 267.94 308.78 drawline
+269.00 284.99 269.00 308.78 drawline
+270.06 284.99 270.06 308.78 drawline
+271.11 284.99 271.11 308.78 drawline
+272.17 284.99 272.17 308.78 drawline
+273.23 284.99 273.23 308.78 drawline
+linesolid
+278.25 304.82 294.11 304.82 drawline
+278.25 304.82 278.25 288.96 drawline
+278.25 288.96 294.11 288.96 drawline
+294.11 288.96 294.11 304.82 drawline
+yellow
+294.11 288.96 278.25 304.82 fillrect
+23 setfontsize
+black
+(2,0) 286.18 296.89 censhow
+linedashed
+darkgreen
+281.42 304.82 281.42 323.58 drawline
+15 setfontsize
+black
+(1) 281.42 302.83 censhow
+darkgreen
+284.59 304.82 284.59 323.58 drawline
+15 setfontsize
+black
+(2) 284.59 302.83 censhow
+darkgreen
+287.76 304.82 287.76 323.58 drawline
+15 setfontsize
+black
+(3) 287.76 302.83 censhow
+darkgreen
+290.94 304.82 290.94 323.58 drawline
+15 setfontsize
+black
+(4) 290.94 302.83 censhow
+299.13 284.99 299.13 308.78 drawline
+300.19 284.99 300.19 308.78 drawline
+301.24 284.99 301.24 308.78 drawline
+302.30 284.99 302.30 308.78 drawline
+303.36 284.99 303.36 308.78 drawline
+304.41 284.99 304.41 308.78 drawline
+305.47 284.99 305.47 308.78 drawline
+306.53 284.99 306.53 308.78 drawline
+307.59 284.99 307.59 308.78 drawline
+308.64 284.99 308.64 308.78 drawline
+309.70 284.99 309.70 308.78 drawline
+310.76 284.99 310.76 308.78 drawline
+311.81 284.99 311.81 308.78 drawline
+312.87 284.99 312.87 308.78 drawline
+linesolid
+317.89 304.82 333.75 304.82 drawline
+317.89 304.82 317.89 288.96 drawline
+317.89 288.96 333.75 288.96 drawline
+333.75 288.96 333.75 304.82 drawline
+yellow
+333.75 288.96 317.89 304.82 fillrect
+23 setfontsize
+black
+(3,0) 325.82 296.89 censhow
+linedashed
+darkgreen
+321.06 304.82 321.06 323.58 drawline
+15 setfontsize
+black
+(1) 321.06 302.83 censhow
+darkgreen
+324.24 304.82 324.24 323.58 drawline
+15 setfontsize
+black
+(2) 324.24 302.83 censhow
+darkgreen
+327.41 304.82 327.41 323.58 drawline
+15 setfontsize
+black
+(3) 327.41 302.83 censhow
+darkgreen
+330.58 304.82 330.58 323.58 drawline
+15 setfontsize
+black
+(4) 330.58 302.83 censhow
+338.77 284.99 338.77 308.78 drawline
+339.83 284.99 339.83 308.78 drawline
+340.89 284.99 340.89 308.78 drawline
+341.94 284.99 341.94 308.78 drawline
+343.00 284.99 343.00 308.78 drawline
+344.06 284.99 344.06 308.78 drawline
+345.12 284.99 345.12 308.78 drawline
+346.17 284.99 346.17 308.78 drawline
+347.23 284.99 347.23 308.78 drawline
+348.29 284.99 348.29 308.78 drawline
+349.34 284.99 349.34 308.78 drawline
+350.40 284.99 350.40 308.78 drawline
+351.46 284.99 351.46 308.78 drawline
+352.52 284.99 352.52 308.78 drawline
+linesolid
+357.54 304.82 373.40 304.82 drawline
+357.54 304.82 357.54 288.96 drawline
+357.54 288.96 373.40 288.96 drawline
+373.40 288.96 373.40 304.82 drawline
+yellow
+373.40 288.96 357.54 304.82 fillrect
+23 setfontsize
+black
+(4,0) 365.47 296.89 censhow
+linedashed
+darkgreen
+360.71 304.82 360.71 323.58 drawline
+15 setfontsize
+black
+(1) 360.71 302.83 censhow
+darkgreen
+363.88 304.82 363.88 323.58 drawline
+15 setfontsize
+black
+(2) 363.88 302.83 censhow
+darkgreen
+367.05 304.82 367.05 323.58 drawline
+15 setfontsize
+black
+(3) 367.05 302.83 censhow
+darkgreen
+370.22 304.82 370.22 323.58 drawline
+15 setfontsize
+black
+(4) 370.22 302.83 censhow
+378.42 284.99 378.42 308.78 drawline
+379.47 284.99 379.47 308.78 drawline
+380.53 284.99 380.53 308.78 drawline
+381.59 284.99 381.59 308.78 drawline
+382.65 284.99 382.65 308.78 drawline
+383.70 284.99 383.70 308.78 drawline
+384.76 284.99 384.76 308.78 drawline
+385.82 284.99 385.82 308.78 drawline
+386.88 284.99 386.88 308.78 drawline
+387.93 284.99 387.93 308.78 drawline
+388.99 284.99 388.99 308.78 drawline
+390.05 284.99 390.05 308.78 drawline
+391.10 284.99 391.10 308.78 drawline
+392.16 284.99 392.16 308.78 drawline
+linesolid
+397.18 304.82 413.04 304.82 drawline
+397.18 304.82 397.18 288.96 drawline
+397.18 288.96 413.04 288.96 drawline
+413.04 288.96 413.04 304.82 drawline
+yellow
+413.04 288.96 397.18 304.82 fillrect
+23 setfontsize
+black
+(5,0) 405.11 296.89 censhow
+linedashed
+darkgreen
+400.35 304.82 400.35 323.58 drawline
+15 setfontsize
+black
+(1) 400.35 302.83 censhow
+darkgreen
+403.53 304.82 403.53 323.58 drawline
+15 setfontsize
+black
+(2) 403.53 302.83 censhow
+darkgreen
+406.70 304.82 406.70 323.58 drawline
+15 setfontsize
+black
+(3) 406.70 302.83 censhow
+darkgreen
+409.87 304.82 409.87 323.58 drawline
+15 setfontsize
+black
+(4) 409.87 302.83 censhow
+418.06 284.99 418.06 308.78 drawline
+419.12 284.99 419.12 308.78 drawline
+420.18 284.99 420.18 308.78 drawline
+421.23 284.99 421.23 308.78 drawline
+422.29 284.99 422.29 308.78 drawline
+423.35 284.99 423.35 308.78 drawline
+424.41 284.99 424.41 308.78 drawline
+425.46 284.99 425.46 308.78 drawline
+426.52 284.99 426.52 308.78 drawline
+427.58 284.99 427.58 308.78 drawline
+428.63 284.99 428.63 308.78 drawline
+429.69 284.99 429.69 308.78 drawline
+430.75 284.99 430.75 308.78 drawline
+431.81 284.99 431.81 308.78 drawline
+linesolid
+179.14 284.99 194.99 284.99 drawline
+179.14 284.99 179.14 269.14 drawline
+179.14 269.14 194.99 269.14 drawline
+194.99 269.14 194.99 284.99 drawline
+linedashed
+194.99 283.94 218.78 283.94 drawline
+194.99 282.88 218.78 282.88 drawline
+194.99 281.82 218.78 281.82 drawline
+194.99 280.77 218.78 280.77 drawline
+194.99 279.71 218.78 279.71 drawline
+194.99 278.65 218.78 278.65 drawline
+194.99 277.59 218.78 277.59 drawline
+194.99 276.54 218.78 276.54 drawline
+194.99 275.48 218.78 275.48 drawline
+194.99 274.42 218.78 274.42 drawline
+194.99 273.37 218.78 273.37 drawline
+194.99 272.31 218.78 272.31 drawline
+194.99 271.25 218.78 271.25 drawline
+194.99 270.19 218.78 270.19 drawline
+linesolid
+218.78 284.99 234.64 284.99 drawline
+218.78 284.99 218.78 269.14 drawline
+218.78 269.14 234.64 269.14 drawline
+234.64 269.14 234.64 284.99 drawline
+linedashed
+234.64 283.94 258.43 283.94 drawline
+234.64 282.88 258.43 282.88 drawline
+234.64 281.82 258.43 281.82 drawline
+234.64 280.77 258.43 280.77 drawline
+234.64 279.71 258.43 279.71 drawline
+234.64 278.65 258.43 278.65 drawline
+234.64 277.59 258.43 277.59 drawline
+234.64 276.54 258.43 276.54 drawline
+234.64 275.48 258.43 275.48 drawline
+234.64 274.42 258.43 274.42 drawline
+234.64 273.37 258.43 273.37 drawline
+234.64 272.31 258.43 272.31 drawline
+234.64 271.25 258.43 271.25 drawline
+234.64 270.19 258.43 270.19 drawline
+linesolid
+258.43 284.99 274.28 284.99 drawline
+258.43 284.99 258.43 269.14 drawline
+258.43 269.14 274.28 269.14 drawline
+274.28 269.14 274.28 284.99 drawline
+linedashed
+274.28 283.94 298.07 283.94 drawline
+274.28 282.88 298.07 282.88 drawline
+274.28 281.82 298.07 281.82 drawline
+274.28 280.77 298.07 280.77 drawline
+274.28 279.71 298.07 279.71 drawline
+274.28 278.65 298.07 278.65 drawline
+274.28 277.59 298.07 277.59 drawline
+274.28 276.54 298.07 276.54 drawline
+274.28 275.48 298.07 275.48 drawline
+274.28 274.42 298.07 274.42 drawline
+274.28 273.37 298.07 273.37 drawline
+274.28 272.31 298.07 272.31 drawline
+274.28 271.25 298.07 271.25 drawline
+274.28 270.19 298.07 270.19 drawline
+linesolid
+298.07 284.99 313.93 284.99 drawline
+298.07 284.99 298.07 269.14 drawline
+298.07 269.14 313.93 269.14 drawline
+313.93 269.14 313.93 284.99 drawline
+linedashed
+313.93 283.94 337.72 283.94 drawline
+313.93 282.88 337.72 282.88 drawline
+313.93 281.82 337.72 281.82 drawline
+313.93 280.77 337.72 280.77 drawline
+313.93 279.71 337.72 279.71 drawline
+313.93 278.65 337.72 278.65 drawline
+313.93 277.59 337.72 277.59 drawline
+313.93 276.54 337.72 276.54 drawline
+313.93 275.48 337.72 275.48 drawline
+313.93 274.42 337.72 274.42 drawline
+313.93 273.37 337.72 273.37 drawline
+313.93 272.31 337.72 272.31 drawline
+313.93 271.25 337.72 271.25 drawline
+313.93 270.19 337.72 270.19 drawline
+linesolid
+337.72 284.99 353.57 284.99 drawline
+337.72 284.99 337.72 269.14 drawline
+337.72 269.14 353.57 269.14 drawline
+353.57 269.14 353.57 284.99 drawline
+linedashed
+353.57 283.94 377.36 283.94 drawline
+353.57 282.88 377.36 282.88 drawline
+353.57 281.82 377.36 281.82 drawline
+353.57 280.77 377.36 280.77 drawline
+353.57 279.71 377.36 279.71 drawline
+353.57 278.65 377.36 278.65 drawline
+353.57 277.59 377.36 277.59 drawline
+353.57 276.54 377.36 276.54 drawline
+353.57 275.48 377.36 275.48 drawline
+353.57 274.42 377.36 274.42 drawline
+353.57 273.37 377.36 273.37 drawline
+353.57 272.31 377.36 272.31 drawline
+353.57 271.25 377.36 271.25 drawline
+353.57 270.19 377.36 270.19 drawline
+linesolid
+377.36 284.99 393.22 284.99 drawline
+377.36 284.99 377.36 269.14 drawline
+377.36 269.14 393.22 269.14 drawline
+393.22 269.14 393.22 284.99 drawline
+linedashed
+393.22 283.94 417.01 283.94 drawline
+393.22 282.88 417.01 282.88 drawline
+393.22 281.82 417.01 281.82 drawline
+393.22 280.77 417.01 280.77 drawline
+393.22 279.71 417.01 279.71 drawline
+393.22 278.65 417.01 278.65 drawline
+393.22 277.59 417.01 277.59 drawline
+393.22 276.54 417.01 276.54 drawline
+393.22 275.48 417.01 275.48 drawline
+393.22 274.42 417.01 274.42 drawline
+393.22 273.37 417.01 273.37 drawline
+393.22 272.31 417.01 272.31 drawline
+393.22 271.25 417.01 271.25 drawline
+393.22 270.19 417.01 270.19 drawline
+linesolid
+417.01 284.99 432.86 284.99 drawline
+417.01 284.99 417.01 269.14 drawline
+417.01 269.14 432.86 269.14 drawline
+432.86 269.14 432.86 284.99 drawline
+1 setlinewidth
+showpage
+
+%%Trailer
